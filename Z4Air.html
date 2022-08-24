@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+
+<html ng-app="myApp" ng-controller="commonCtrl" class="ng-scope">
+<head>
+    <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <title ng-bind="site_title" class="ng-binding">XGIMI Smart LED home projector</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="XGIMI,LED">
+    <meta name="description" content="XGIMI Offical Website">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="bookmark" type="image/x-icon" href="./img/favicon.ico">
+    <link href="./css/common.css?v=2" rel="stylesheet" type="text/css">
+    <link href="css/z4.css?v=2" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <link href="css/media.css" rel="stylesheet">
+<body class="z4 z4air" data-pinterest-extension-installed="cr2.0.5">
+
+<!--desktop header-->
+<div  class="ng-scope desktop-header">
+    <style class="ng-scope">
+
+    .nav-header,.home-main{
+        margin-top: -10px;
+    }
+    .scollap{
+        width: 100%;
+        background-color: #777;
+    }
+    .nav-header .items{
+        width: 100%;
+        height: 80px;
+        background-color: #EFEFEF;
+        position: relative;
+        display: inline-block;
+        /*display: none;*/
+    }
+    .nav-header .items a{
+        display: inline-block;
+        width: 160px;
+        height: 100px;
+        float: left;
+        color: #555;
+    }
+    .nav-header .items a:hover{
+        color:#444;
+    }
+    .nav-header .items dl{
+        display: inline-block;
+        margin-top: -2px;
+        text-align: center;
+        position: absolute;
+        margin-left: -54px;
+    }
+    .nav-header .items a:nth-child(1){
+        margin-left:105px;
+    }
+    .nav-header .items a dt img {
+        width: 98px;
+        margin-top: -14px;
+    }
+    .nav-header .items dd{
+        position: absolute;
+        top: 16px;
+    }
+    .nav-header .items a:nth-child(2) dd{
+        margin-left: 30px;
+    }
+    .left01{
+
+    }
+    .left02{
+        margin-left: 30px;
+    }
+    .op{
+        /*background-color: rgba(0,0,0,0);*/
+    }
+    .f{
+        color:#555;
+        margin-left:16px;
+    }
+    .header-bg{
+        width: 100%;
+        height: 66px;
+        position: absolute;
+        top: 0;
+        background: #000;
+        z-index: 30;
+    }
+    .header-s {
+        height: 80px;
+        overflow: hidden;
+        width: 100%;
+        transition: height .8s ease;
+    }
+    .header-s .container{
+        line-height: 90px;
+    }
+    .header-s .nav-logo{
+        margin-top: 6px;
+    }
+    .header-s.tr{
+        height: 170px;
+    }
+</style>
+    <div class="nav-header op ng-scope">
+        <div class="scollap op"></div>
+        <div class="header-s">
+            <div class="container clearfix main">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="h1.html" class="bg ">H1</a></li>
+                        <li class="z4header"><a href="Z4.html" class="bg">Серія XGiMi Z4</a></li>
+                        <li><a href="support.html" class="bg"> Підтримка</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items">
+                <div class="container">
+                    <a href="Z4.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4_jg.png" alt="">
+                            </dt>
+                            <dd class=" f f1 d">Z4 Aurora</dd>
+                        </dl>
+                    </a>
+                    <a href="Z4Air.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4air.png" alt="">
+                            </dt>
+                            <dd class=" f d">Z4 Air</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" class="ng-scope">
+        var header=$(".nav-header");
+        var col=$(".scollap");
+        col.addClass("op");
+        header.addClass("op");
+        $(".z4header").hover(function() {
+            $(".header-s").addClass("tr");
+            // header.addClass("tr").removeClass("op");
+            // col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+        $(".items").hover(function() {
+            $(".header-s").addClass("tr");
+// header.addClass("tr").removeClass("op");
+//     col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+    </script>
+</div>
+<style type="text/css">
+    .left01{
+        margin-left: -32px;
+    }
+    .nav-header .items a:nth-child(1) {
+        margin-left: 170px;
+    }
+</style>
+<!--end desktop header-->
+
+<!--mobile header-->
+<div class="ng-scope mobile-header">
+    <div class="menu ng-scope">
+        <a class="list" id="menuBtn" onclick="showMenu(this)"></a>
+    </div>
+    <div class="menu-list ng-scope" style="display: none;">
+        <ul>
+            <li><a href="h1.html">H1</a></li>
+            <li><a href="Z4.html">Z4 Aurora</a></li>
+            <li><a href="Z4Air.html">Z4Air</a></li>
+            <li><a href="about.html">Про продукт</a></li>
+            <li><a href="faq.html">Підтримка</a></li>
+        </ul>
+    </div>
+    <script class="ng-scope">
+        function showMenu(obj){
+            $(".menu-list").slideToggle();
+            if($(obj).hasClass("close")){
+                $(obj).removeClass("close");
+            }else{
+                $(obj).addClass("close");
+            }
+        }
+    </script>
+</div>
+<!--end mobile header-->
+
+<div class="buy-con" style="display: none;">
+    <div class="buy-bg"></div>
+    <div class="buy"><p>Z4Air<a href="https://www.amazon.com/dp/B01AY2YSII/" target="_blank">BUY NOW</a></p></div>
+</div>
+
+<div class="air-con home-main textwhite">
+    <div class="z4air-posit-con home-main-left">
+        <h1>Насолоджуйся!</h1>
+        <h3>Широкий екран. </h3>
+    </div>
+    <img class="section_d" ng-src="img/z4air/air_01.jpg" src="img/z4air/air_01.jpg">
+    <img class="section_m" ng-src="img/z4air/air_01.jpg" src="img/z4air/air-m_01.jpg">
+</div>
+<div class="air-con">
+    <div class="z4air-posit-con textcentr center">
+        <h2>Полегшений. Тонкий. Переносний</h2>
+        <p>XGiMi Z4 Air - ультра-тонкий мультимедіа-проектор, з чудовим, вишуканим дизайном корпусу, товщина якого становить всього 23,5 мм. Z4 Air такий же компактний як iPad Mini,
+        вага пристрою складає лише 650 г.,  Ви можете завжди взяти його з собою.
+        XGiMi Z4 Air є неперевершеним не тільки завдяки своїй гарній обробці корпуса, але й своїми формами.
+        XGiMi Z4 Air легкий у керуванні, виготовлений з анодованого алюмінію, має піскоструйну обробку</p>
+    </div>
+    <img class="section_d lazy" data-original="img/z4air/air_02.jpg" src="img/z4air/air_02.jpg">
+    <img class="section_m" ng-src="img/z4air/air_01.jpg" src="img/z4air/air-m_02.jpg">
+</div>
+<div class="air-con textwhite">
+    <div class="z4air-posit-con textcentr center">
+        <h2>Полегшений. Тонкий. Потужний
+        <br/> Готовий на все!</h2>
+        <p>Полегшений та тонкий XGiMi Z4 Air має високопотужну акумуляторну батарею в 13600 мА год від LG Chem.
+        Z4 Air працює 2.5 години, а у енергоекономічному режимі - 5 годин. Ввімкни і насолоджуйся світлом в будь-який час!</p>
+    </div>
+    <img class="section_d lazy" data-original="img/z4air/air_03.jpg" src="img/z4air/air_03.jpg">
+    <img class="section_m" src="img/z4air/air-m_03.jpg">
+</div>
+<div class="air-con">
+    <div class="section_d z4air-posit-con air-con-right">
+        <h2>Ручне керування</h2>
+        <p>Z4 Air потішить Вас не лише розвагами, а й зручністю ручного керування</p>
+    </div>
+    <div class="section_m z4air-posit-con textcentr center">
+        <h2>Ручне керування</h2>
+        <p>Z4 Air потішить Вас не лише розвагами, а й зручністю ручного керування</p>
+    </div>
+    <img class="section_d lazy" data-original="img/z4air/air_04.jpg" src="img/z4air/air_04.jpg">
+    <img class="section_m" src="img/z4air/air-m_04-1.jpg">
+</div>
+<div class="air-con textwhite">
+    <div class="z4air-posit-con textcentr center">
+        <h2>Полегшений. Тонкий. Full HD.  </h2>
+        <p>4 Air може похвалитися не лише своїми формами, але й  180 -дюймовим монітором з неперевершеною якістю зображення. </p>
+    </div>
+    <img class="section_d lazy" data-original="img/z4air/air_05.jpg"  src="img/z4air/air_05.jpg">
+    <img class="section_m" src="img/z4air/air-m_05.jpg">
+</div>
+<div class="air-con">
+    <div class="z4air-posit-con left air-con-left">
+        <h2>Повзунковий перемикач. Полегши собі життя. </h2>
+        <p>Z4 Air має інтуїтивно зрозумілий повзунковий перемикач. Вам варто лише зсунути його та натиснути на кнопку, в той же самий час Z4 Air буде працювати.
+        </p>
+        <h3>Ковзання протестовано: 200,000</h3>
+        <h3>Відстань між лініями: 0.02 мм</h3>
+    </div>
+    <img class="section_d lazy" data-original="img/z4air/air_06.jpg" src="img/z4air/air_06.jpg">
+    <img class="section_m" src="img/z4air/air-m_06.jpg">
+</div>
+<div class="air-con air-con-tech">
+    <div class="z4air-posit-con textcentr center">
+        <h2>Тихий. Стійкий.</h2>
+        <p>Для того, щоб зменшити шум пристрою і забезпечити швидке охолодження, внутрішні поверхні Z4Air виготовлені з передового матеріалу - графену, чия теплопровідна властивість в десять разів вища за метал. Це схоже на поглинання"шкірою" Z4 Air внутрішнього тепла та повне вивільнення його "тілом". Таким чином зменшується навантаження вентилятора. Але слід зазначити, що Z4 Air має вбудовану систему самоадаптації. Тобто, вона може регулювати швидкість повітря на основі своєї внутрішньої температури, щоб переконатися, що Z4Air працює тихо і рівно.</p>
+    </div>
+    <div class="z4air-posit-con tech-1 section_d">
+        <h4>Металевий корпус.</h4>
+        <p>Комп'ютеризована система керування для створення форм. Для отримання високої ефективності охолодження, внутрішні поверхні Z4Air виготовлені з передового матеріалу - графену, чия теплопровідна властивість в десять разів вища за метал.</p>
+    </div>
+    <div class="z4air-posit-con tech-2 section_d">
+        <h4>13600mAh батареї від LG Chem</h4>
+        <p>Тривалий час автономної роботи в енергозберігаючому режимі. Працює до 5 годин</p>
+    </div>
+    <div class="z4air-posit-con tech-3 section_d">
+        <h4>TRP Архітектура від Texas Instruments</h4>
+        <p>Посилює піксельну матрицю, роздільну здатність та чіткість звуку</p>
+    </div>
+    <div class="z4air-posit-con tech-4 section_d">
+        <h4>Вбудована система адаптації </h4>
+        <p>регулює швидкість повітря на основі своєї внутрішньої температури, щоб переконатися, що Z4Air працює тихо і рівно.</p>
+    </div>
+    <img data-original="img/z4air/air_07.jpg" class="lazy section_d" src="img/icon/transparent.gif">
+    <img class="section_m" src="img/z4air/air-m_07.jpg">
+</div>
+<div class="air-con textwhite">
+    <div class="z4air-posit-con textcentr center">
+        <h2>Tl OPA1612 підсилювач з високою роздільною здатністю.  Відновлює якість звуку</h2>
+        <p>Z4Air адаптує OPA1612 (dual) з високою продуктивністю, бінарними каналами та біполярним входом  операційного підсилювача Texas Instrument.
+        Цей операційний підсилювач забезпечує стабілізацію CMRR (коефіцієнт послаблення синфазних складових): він підтримує 120дБ від 1 Гц до 80 кГц, і спотворення звуку не відбудеться, навіть якщо збільшувати гучність.</p>
+        <h3>Наднизький шум: 1.1 НВ / VHZ на 1 кГц Наднизьке спотворення: 0,000015% при 1 кГц</h3>
+    </div>
+    <img data-original="img/z4air/air_08.jpg" class="section_d lazy" src="img/z4air/air_08.jpg">
+    <img  class="section_m lazy" src="img/z4air/air-m_08.jpg">
+</div>
+<div class="air-con">
+    <div class="z4air-posit-con textcentr center">
+        <h2>Переносний зарядний пристрій</h2>
+        <p>Високопотужна акумуляторну батарея в 13600 мА
+        <br/> Щільність потужності сягає до 725 Вт/л
+        </p>
+    </div>
+    <img class="section_d lazy" data-original="img/z4air/air_09.jpg" src="img/z4air/air_09.jpg">
+    <img  class="section_m lazy" src="img/z4air/air-m_09.jpg">
+</div>
+
+<!--desktop footer-->
+<div  class="ng-scope desktop-footer">
+    <div class="nav-footer ng-scope">
+        <div class="container">
+            <div class="nav-service clearfix">
+                <div class="nav-links clearfix">
+                    <ul>
+                        <li>КОМПАНІЯ</li>
+                        <li><a href="http://mi.ua/company/about/">Про компанію Xiaomi Tech</a></li>
+                        <li><a href="http://mi.ua/company/investors/">Партнерам</a></li>
+                        <li><a href="http://mi.ua/company/contacts/">Контакти</a></li>
+                        <li><a href="http://miui.ua/">MIUI</a></li>
+                        <li><a href="http://mi.ua/company/unlock-your-mi-device/">Unlock Your Mi Device</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ВИГІДНО</li>
+                        <li><a href="http://mi.ua/profitably/delivery/">Доставка та оплата</a></li>
+                        <li><a href="http://mi.ua/profitably/credit/">Придбати в розстрочку</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-protect/">Mi Protect</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-trade-in/">Mi Trade-in</a></li>
+                        <li><a href="http://mi.ua/profitably/podarunkovi-sertifikati/">Подарункові сертифікати</a></li>
+                        <li><a href="http://mi.ua/profitably/promo/">Актуальні акції</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ЗРУЧНО</li>
+                        <li><a href="http://mi.ua/easy/change-and-returns/">Обмін та повернення без проблем</a></li>
+                        <li><a href="http://mi.ua/easy/warranty/">Гарантія</a></li>
+                        <li><a href="http://mi.ua/easy/service/">Сервіс</a></li>
+                        <li><a href="http://mi.ua/easy/check-serial-number/">Перевірка Серійного Номеру</a></li>
+                        <li><a href="http://mi.ua/easy/android-mi-store-ukraine-/">Додаток Android “Mi Store Ukraine” </a></li>
+                    </ul>
+                    <ul>
+                        <li>НАШІ ПРОЕКТИ</li>
+                        <li><a href="http://mi.ua/nashi-proekti/blagodiyni-proekti/">Благодійні проекти</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/pridbati-zi-skladu-v-kitai/">Придбати зі складу в Китаї</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/partneri/">Наші партнери</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-copyright">
+                <span><img src="https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/market/logo.png"></span>
+                <span id="copyright">veoles</span>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/facebook-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/MiUkraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/twitter-icon1.png">
+                        </div>
+                    </a>
+                    <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/youtube-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/google-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://vk.com/mi_ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vkontakte_i1.png">
+                        </div>
+                    </a>
+                    <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vimeo-icon1.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end desktop footer-->
+
+<!--mobile footer-->
+<div class="ng-scope mobile-footer">
+    <div class="footer ng-scope">
+        <div class="p2">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/facebook-icon1.png">
+                    </span>
+                </a>
+                <a href="https://twitter.com/MiUkraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/twitter-icon1.png">
+                    </span>
+                </a>
+                <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/youtube-icon1.png">
+                    </span>
+                </a>
+                <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/google-icon1.png">
+                    </span>
+                </a>
+                <a href="https://vk.com/mi_ukraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/vkontakte_i1.png">
+                    </span>
+                </a>
+                <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/vimeo-icon1.png">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <p class="p3">
+            <a href="mailto:info@xiaomi.ua">
+                <img src="./img/s_08.jpg" style="margin-bottom: 3px;"><br>info@xiaomi.ua
+            </a>
+            <a href="tel:0 (800) 60-44-71">
+                <img src="./img/s_10.jpg"><br>0 (800) 60-44-71
+            </a>
+        </p>
+    </div>
+</div>
+<!-- end mobile footer-->
+
+
+
+<script src="./js/jquery.lazyload.min.js?v=1.9.3"></script>
+<script>
+    $(function() {
+        $("img.lazy").lazyload({
+            threshold : -1,
+            placeholder : "img/icon/transparent.gif", //用图片提前占位
+            effect: "fadeIn"
+        });
+
+        $(window).scroll(function(){
+            if($(window).scrollTop()>600){
+                $(".buy-con").show();
+            }else{
+                $(".buy-con").hide();
+            }
+        });
+    });
+</script>
+
+
+</body></html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="commonCtrl" class="ng-scope">
+<head>
+    <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <title ng-bind="site_title" class="ng-binding">XGIMI Smart LED home projector</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="High-end theater experience w/5min setup | 1080p LED projector, Harman Kardon stereo &amp; Android OS. | Crowdfunding is a democratic way to support the fundraising needs of your community. Make a contribution today! " content="{$description}">
+    <meta name="High-end theater experience w/5min setup | 1080p LED projector, Harman Kardon stereo &amp; Android OS. | Crowdfunding is a democratic way to support the fundraising needs of your community. Make a contribution today! " content="{$keywords}">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="bookmark" type="image/x-icon" href="img/favicon.ico">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/com.css">
+    <link rel="stylesheet" type="text/css" href="css/function.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+
+<body data-pinterest-extension-installed="cr2.0.5">
+<div class="ng-scope">
+    <style class="ng-scope">
+
+    .nav-header,.home-main{
+        margin-top: -10px;
+    }
+    .scollap{
+        width: 100%;
+        background-color: #777;
+    }
+    .nav-header .items{
+        width: 100%;
+        height: 80px;
+        background-color: #EFEFEF;
+        position: relative;
+        display: inline-block;
+        /*display: none;*/
+    }
+    .nav-header .items a{
+        display: inline-block;
+        width: 160px;
+        height: 100px;
+        float: left;
+        color: #555;
+    }
+    .nav-header .items a:hover{
+        color:#444;
+    }
+    .nav-header .items dl{
+        display: inline-block;
+        margin-top: -2px;
+        text-align: center;
+        position: absolute;
+        margin-left: -54px;
+    }
+    .nav-header .items a:nth-child(1){
+        margin-left:105px;
+    }
+    .nav-header .items a dt img {
+        width: 98px;
+        margin-top: -14px;
+    }
+    .nav-header .items dd{
+        position: absolute;
+        top: 16px;
+    }
+    .nav-header .items a:nth-child(2) dd{
+        margin-left: 30px;
+    }
+    .left01{
+
+    }
+    .left02{
+        margin-left: 30px;
+    }
+    .op{
+        /*background-color: rgba(0,0,0,0);*/
+    }
+    .f{
+        color:#555;
+        margin-left:16px;
+    }
+    .header-bg{
+        width: 100%;
+        height: 66px;
+        position: absolute;
+        top: 0;
+        background: #000;
+        z-index: 30;
+    }
+    .header-s {
+        height: 80px;
+        overflow: hidden;
+        width: 100%;
+        transition: height .8s ease;
+    }
+    .header-s .container{
+        line-height: 90px;
+    }
+    .header-s .nav-logo{
+        margin-top: 6px;
+    }
+    .header-s.tr{
+        height: 170px;
+    }
+</style>
+    <div class="nav-header op ng-scope">
+        <div class="scollap op"></div>
+        <div class="header-s">
+            <div class="container clearfix main">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="h1.html" class="bg ">H1</a></li>
+                        <li class="z4"><a href="Z4.html" class="bg">Серія XGiMi Z4s</a></li>
+                        <li><a href="support.html" class="bg"> Підтримка</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items">
+                <div class="container">
+                    <a href="Z4.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4_jg.png" alt="">
+                            </dt>
+                            <dd class=" f f1 d">Z4 Aurora</dd>
+                        </dl>
+                    </a>
+                    <a href="Z4Air.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4air.png" alt="">
+                            </dt>
+                            <dd class=" f d">Z4 Air</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" class="ng-scope">
+        var header=$(".nav-header");
+        var col=$(".scollap");
+        col.addClass("op");
+        header.addClass("op");
+        $(".z4").hover(function() {
+            $(".header-s").addClass("tr");
+            // header.addClass("tr").removeClass("op");
+            // col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+        $(".items").hover(function() {
+            $(".header-s").addClass("tr");
+// header.addClass("tr").removeClass("op");
+//     col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+    </script>
+</div>
+
+<div class="bd">
+<div class="overall">
+<div id="secondNav" class="second-nav secondNav">
+    <div class="container">
+        <a href="h1.html"><span>H1</span></a>
+        <ul class="secondNavItem">
+            <li><a href="h1.html">Особливості</a></li>
+            <li><a href="display.html">Якість зображення</a></li>
+            <li><a href="sound.html">Стерео </a></li>
+            <li><a href="#" class="isTure">Технічні характеристики</a></li>
+            <li><a href="about.html">Про продукт</a></li>
+        </ul>
+    </div>
+</div>
+<div class="section section01 is-visible">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Швидкопрацюючий процесор<br>Тримайтеся, бо швидкість здуне вас!</h2>
+            <p class="desc">
+                H1 может похвалитися новим чіпом Mstar 6A928 TV  з Cortex A17архітектурою,
+                <br>Quadcore 1.75GHz CPU, 3 Гб оперативної пам'яті,підтримкою високоефективного кодування відео HEVC/H.265,
+                <br>форматом ультра HD 4K відео. Висока якість неодмінно стане у нагоді припрограванні відео, дадатків та ігор.
+            </p>
+        </div>
+        <div class="features" id="fontfloat"></div>
+    </div>
+</div>
+<div class="section section02">
+    <div class="con sa">
+        <div class="features">
+            <dl class="verticalkeystone">
+                <dt class="webfont">Горизонтальна проекція </dt>
+                <dd>H1 має функцію горизонтальної корекції трапецеїдальних спотворень - функція, яка, як правило, діє лише на
+                    дорогих проекторах. Це означає, що навіть якщо він буде розташований біля ліжка, H1 буде проектувати оптимальне зображення. </dd>
+                <dt class="a m2"></dt>
+                <dd class="m2">Горизонтальне зображення </dd>
+            </dl>
+            <dl class="verticalkeystone">
+                <dt class="webfont">Вертикальна проекція</dt>
+                <dd>H1 також має вертикальну корекцію трапеції,
+                    <br>забезпечуючи чіткість та чистоту
+                    <br>зображення навіть
+                    <br> при переміщенні. <br/> </dd>
+                <dt class="b m2"></dt>
+                <dd class="m2">Вертикальне зображення </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="section section03">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">H1 - фантастична ігрова консоль</h2>
+            <p class="desc">
+                H1 має потужні  обчислювальні здібності, та чудово працює з графікою.
+                <br/> Потокове відео з високою роздільною здатністю легко транслюється.
+                <br>Маючи чотирьохядерний процесор та  3 Гб оперативної пам'яті,
+                <br/> ви будете здивовані тим , наскільки багато розваг пропонує Вам Н1
+
+            </p>
+        </div>
+    </div>
+    <div class="handle"></div>
+</div>
+<div class="section section04">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Подвійний охолоджувач системи</h2>
+            <p class="desc">
+                Два незалжні тепловідводи
+                <br> - тихі та життездатні,
+                <br> - виводять надлишкове тепло
+            </p>
+        </div>
+    </div>
+</div>
+<div class="section section05">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Різноманітні&nbsp;<br> інтерфейси входу</h2>
+            <p class="desc">
+                USB 3.0 порт з пропускною здатністю до 5 Гбіт/с
+                <br> під час відтворення контенту з плагіна
+                <br> на жорсткому диску працює без відхилень.
+                <br>
+            </p>
+        </div>
+        <div class="features">
+            <dl>
+                <dt class="f1"></dt>
+                <dd class="under1">3.5mm Jack</dd>
+            </dl>
+            <dl>
+                <dt class="f2"></dt>
+                <dd class="under1">USB3.0</dd>
+            </dl>
+            <dl>
+                <dt class="f3"></dt>
+                <dd class="under1">USB2.0</dd>
+            </dl>
+            <dl>
+                <dt class="f4"></dt>
+                <dd class="under1">HDMI2.0x2</dd>
+            </dl>
+            <dl>
+                <dt class="f5"></dt>
+                <dd class="under1">Ethernet порт</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="section section06">
+    <div class="J_movePic" data-move="40"></div>
+    <div class="con sa">
+        <div class="features">
+            <dl>
+                <dt class="webfont">18Гбіт/с</dt>
+            </dl>
+            <dl>
+                <dt class="webfont">60фт/с</dt>
+            </dl>
+        </div>
+        <div class="content">
+            <p class="desc">
+                У Н1 вбудовано  HDMI 2.0 порт з 18Гбіт/с широкосмугової передачі, підтримуючи трансляцію відео з частотою
+                <br>  у 60фт/с при роздільній здатності у 4 000 пікселів. А це означає, що ти можеш грати через  HDMI 2.0
+                <br>  на різноманітних консолях, таких як, наприклад, XBOX, PS4, без багів  та зупинок.
+            </p>
+            <h2 class="title webfont">Широкосмугова передача у 18Гбіт/с +  HDMI 2.0 дозволяють H1 проектувати 4K зображення.</h2>
+        </div>
+    </div>
+    <div class="dark"></div>
+</div>
+<div class="section section07">
+    <div class="content">
+        <h2 class="title webfont">Технічні параметри:</h2>
+    </div>
+</div>
+<div class="section section08">
+    <div class="commonWidth">
+        <div class="part1 borderColor">
+            <ul class="part1-content">
+                <li>
+                    <div class="part1-conent-pic1"></div>
+                </li>
+                <li>
+                    <div class="part1-conent-pic2"></div>
+                </li>
+                <li>
+                    <div class="part1-conent-pic3"></div>
+                </li>
+            </ul>
+            <ul class="part1-discription">
+                <li><strong>Розмір товару: </strong><span>200 x 200 x 128мм</span></li>
+                <li><strong>Вага:</strong><span> 2.1 кг</span></li>
+                <li><strong>Розмір упаковки: </strong><span>245 x 245 x 216 мм</span></li>
+                <li><strong>Вага упаковки:</strong><span> 4.1 кг</span></li>
+            </ul>
+            <!--<hr class="hr0" />-->
+        </div>
+        <div class="part2 borderColor">
+            <h2 class="partTitle">Оптичні параметри:</h2>
+            <ul class="part2-left partContent">
+                <li>Найменування: Мультимедіа-проектор XGiMi H1</li>
+                <li>Технологія відображення:    0.47"DMD RGB-LED</li>
+                <li>Об'єктив:  Висока пропускна здатність лінзи</li>
+                <li>Особливість: 3D-функція</li>
+                <li>Яскравість: 900 ANSI lumen</li>
+            </ul>
+            <ul class="part2-right partContent">
+                <li>Рівномірність яскравості:  98%</li>
+                <li>Кольорова гама:  >=120%NTSC</li>
+                <li>Контраст:    10000:1</li>
+                <li>Стандартна роздільна здатність:  Full HD (1920х1080) </li>
+                <li>Сумісність  2K/4K</li>
+            </ul>
+        </div>
+        <div class="part3 borderColor">
+            <h2 class="partTitle pullleft">Параметри проекції</h2>
+            <ul class="part3-left pullleft">
+                <li>Коефіцієнт проекції 1.39-1.5:1</li>
+                <li>Оптичний зум: 1.1 </li>
+                <li>Позавісний метоод: 100%</li>
+                <li>Трапеції ректификації: По вертикалі: ± 35 градусів, по горизонталі: ± 30</li>
+                <li>Проекційний метод:  Вперед / назад / підвісити на стелю</li>
+            </ul>
+        </div>
+        <div class="part4 borderColor ">
+            <h2 class="partTitle">Системні параметри</h2>
+            <ul class="part4-left partContent">
+                <li>CPU (процесор) Четирьохядерний процессор 1.7GHz Mstar 6A928 Cortex-A17</li>
+                <li>GPU (графічний процесор) Mail-450MP4 </li>
+                <li>Оперативна пам'ять 3GB DDR3</li>
+            </ul>
+            <ul class="part4-right partContent">
+                <li>Накопичувач 16GB EMMC</li>
+                <li>ОС GMUI база на Android 5.1.1</li>
+                <li>Дисплей (дзеркальне відображення) Airplay / DLNA / Miracast</li>
+            </ul>
+        </div>
+        <div class="part5 borderColor">
+            <h2 class="partTitle pullleft">Вхідний/Вихідний інтерфес</h2>
+            <ul class="part5Content">
+                <li class="part5Item">
+                    <div class="part5pic1 part5pic"></div>
+                    <div class="part5picfont"> 3.5mm speaker jack </div>
+                </li>
+                <li class="part5Item">
+                    <div class="part5pic2 part5pic"></div>
+                    <div class="part5picfont">USB 2.0</div>
+                </li>
+                <li class="part5Item">
+                    <div class="part5pic3 part5pic"></div>
+                    <div class="part5picfont">USB 3.0</div>
+                </li>
+                <li class="part5Item">
+                    <div class="part5pic4 part5pic"></div>
+                    <div class="part5picfont">Optical fiber port</div>
+                </li>
+                <li class="part5Item">
+                    <div class="part5pic5 part5pic"></div>
+                    <div class="part5picfont">Ethernet порт</div>
+                </li>
+                <li class="part5Item">
+                    <div class="part5pic7 part5pic"></div>
+                    <div class="part5picfont">Power jack</div>
+                </li>
+                <li class="part5Item">
+                    <div class="part5pic8 part5pic"></div>
+                    <div class="part5picfont">HDMI 1</div>
+                </li>
+                <li class="part5Item">
+                    <div class="part5pic8 part5pic"></div>
+                    <div class="part5picfont">HDMI 2/ARC</div>
+                </li>
+            </ul>
+        </div>
+        <div class="part6 borderColor">
+            <h2 class="partTitle pullleft">Електричні параметри:</h2>
+            <ul class="part6-left pullleft">
+                <li>Рівень шума <30дБ</li>
+                <li>Розсіювання потужності 80-130W</li>
+                <li>Потужність AC 100-240В, 50 / 60Гц</li>
+            </ul>
+        </div>
+        <div class="part7">
+            <h2 class="partTitle pullleft">Сумісність</h2>
+            <ul class="part6-left pullleft">
+                <li>Wi-Fi Двохдіапазонний 2.4/5GHz,802.11a/b/g/n/ac </li>
+                <li>Bluetooth Bluetooth 4.0.BLE</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="scrollTop"></div>
+</div>
+</div>
+<div  class="ng-scope">
+    <div class="nav-footer ng-scope">
+        <div class="container">
+            <div class="nav-service clearfix">
+                <div class="nav-links clearfix">
+                    <ul>
+                        <li>КОМПАНІЯ</li>
+                        <li><a href="http://mi.ua/company/about/">Про компанію Xiaomi Tech</a></li>
+                        <li><a href="http://mi.ua/company/investors/">Партнерам</a></li>
+                        <li><a href="http://mi.ua/company/contacts/">Контакти</a></li>
+                        <li><a href="http://miui.ua/">MIUI</a></li>
+                        <li><a href="http://mi.ua/company/unlock-your-mi-device/">Unlock Your Mi Device</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ВИГІДНО</li>
+                        <li><a href="http://mi.ua/profitably/delivery/">Доставка та оплата</a></li>
+                        <li><a href="http://mi.ua/profitably/credit/">Придбати в розстрочку</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-protect/">Mi Protect</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-trade-in/">Mi Trade-in</a></li>
+                        <li><a href="http://mi.ua/profitably/podarunkovi-sertifikati/">Подарункові сертифікати</a></li>
+                        <li><a href="http://mi.ua/profitably/promo/">Актуальні акції</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ЗРУЧНО</li>
+                        <li><a href="http://mi.ua/easy/change-and-returns/">Обмін та повернення без проблем</a></li>
+                        <li><a href="http://mi.ua/easy/warranty/">Гарантія</a></li>
+                        <li><a href="http://mi.ua/easy/service/">Сервіс</a></li>
+                        <li><a href="http://mi.ua/easy/check-serial-number/">Перевірка Серійного Номеру</a></li>
+                        <li><a href="http://mi.ua/easy/android-mi-store-ukraine-/">Додаток Android “Mi Store Ukraine” </a></li>
+                    </ul>
+                    <ul>
+                        <li>НАШІ ПРОЕКТИ</li>
+                        <li><a href="http://mi.ua/nashi-proekti/blagodiyni-proekti/">Благодійні проекти</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/pridbati-zi-skladu-v-kitai/">Придбати зі складу в Китаї</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/partneri/">Наші партнери</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-copyright">
+                <span><img src="https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/market/logo.png"></span>
+                <span id="copyright">veoles</span>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/facebook-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/MiUkraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/twitter-icon1.png">
+                        </div>
+                    </a>
+                    <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/youtube-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/google-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://vk.com/mi_ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vkontakte_i1.png">
+                        </div>
+                    </a>
+                    <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vimeo-icon1.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/pageClick.js" type="text/javascript" charset="utf-8"></script>
+
+<div id="ads"></div>
+
+</body></html>

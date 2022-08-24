@@ -1,0 +1,412 @@
+.section01 .title,
+.section05 .title,
+.sectionEnd .title {
+    color: #FFF !important
+}
+
+.section04 p.desc,
+.section07 p.desc,
+.section08 p.desc,
+.section09 p.desc {
+    color: #1a1a1a !important
+}
+.space{
+    width: 100%;
+// height: 130px;
+    background-color: #000;
+}
+.layerTo{
+    height: 860px;
+    width: 1920px;
+    background-color: rgba(5, 5, 5, 0.71);
+    position: absolute;
+    z-index: 1;
+// top: 130px;
+
+}
+.section01top {
+    width: 900px;
+    margin-left: -18px;
+    position: relative;
+}
+
+.section01 {
+    background-color: #b4b4b4;
+    height: 860px;
+    width: 100%;
+    background: url(../images/abstract/section01-bg.png) no-repeat #b4b4b4;
+}
+.pic01{
+   // 	width: 1920px;
+   // 	height: 860px;
+   // 	display: inline-block;
+
+   // }
+.section01 .con {
+    text-align: center;
+    top: 16%;
+    z-index: 1;
+    margin-top: 54px;
+}
+div.section01 .section01top h2.title{
+    margin-left: 332px;
+    color: #fff;
+}
+
+
+.section01 .title font {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro";
+    font-weight: 800;
+
+}
+.section01 .con .content p.desc{
+    color: #fff;
+// margin-top: -400px;
+}
+
+.section02{
+    height: 2580px;
+}
+.eWidth{
+    width: 1158px;
+    position: relative;
+    margin: 0 auto;
+}
+.dLeft{
+    position: absolute;
+    left: 310px;
+    text-align: left;
+    margin-top: 80px;
+}
+.photo{
+    width: 160px;
+    height: 160px;
+}
+
+.dRight{
+    position: absolute;
+    right: 180px;
+    text-align: left;
+    margin-top: 80px;
+}
+.section0201,.section0202,.section0203,.section0204,.section0205,.section0206,.section0207,.section0208{
+    height: 320px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.section0202,.section0204,.section0206,.section0208{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section02-bg.png) no-repeat #f4f4f4;
+}
+.section0201 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0201-photo.png) no-repeat ;
+}
+.section0202 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0202-photo.png) no-repeat ;
+}
+.section0203 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0203-photo.png) no-repeat;
+}
+.section0204 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0204-photo.png) no-repeat ;
+}
+.section0205 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0205-photo.png) no-repeat ;
+}
+.section0206 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0206-photo.png) no-repeat ;
+}
+.section0207 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0207-photo.png) no-repeat;
+}
+.section0208 div.photo{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section0208-photo.png) no-repeat;
+}
+
+.section03 {
+    height:1746px;
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section03-bg.png) no-repeat #050505;
+}
+.section03 .timeLine{
+    position: absolute;
+    height:1746px;
+    width: 1158px;
+    margin: 0 auto;
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section03-timeline.png)  center no-repeat;
+}
+.section03 h2{
+    font-size: 50px;
+    line-height: 56px;
+    height: 56px;
+    color: white;
+    font-weight: lighter;
+}
+.left01{
+    position: absolute;
+    font-size: 30px;
+    line-height: 65px;
+    color: #fff;
+    left: 244px;
+    top: 158px;
+}
+.left02{
+    position: absolute;
+    font-size: 30px;
+    line-height: 65px;
+    left: 244px;
+    color: #fff;
+    top: 472px;
+}
+ul.timeLeft{
+    width: 300px;
+    float: left;
+    text-align: right;
+    position: absolute;
+    left: 244px;
+    top: 182px;
+    color: white;
+}
+ul.timeLeft li:not(:first-child){
+    margin-top: 84px;
+}
+.before{
+    color: #989898;
+}
+.last{
+    color: #00b7ee;
+}
+ul.timeRight{
+    width: 300px;
+    position: absolute;
+    text-align: left;
+    right: 244px;
+    top: 182px;
+    color: white;
+}
+ul.timeRight li:not(:first-child){
+    margin-top: 84px;
+}
+ul.timeRight li:nth-child(5){
+    margin-top:62px;
+}
+ul.timeRight li:nth-child(8){
+    margin-top:62px;
+}
+ul.timeRight li:nth-child(9){
+    margin-top:44px;
+}
+ul.timeRight li:nth-child(10){
+    margin-top:62px;
+}
+ul.timeRight li:nth-child(11){
+    margin-top:66px;
+}
+ul.timeRight li:nth-child(12){
+    margin-top:82px;
+}
+ul.timeRight li:nth-child(13){
+    margin-top:84px;
+}
+ul.timeRight li:nth-child(14){
+    margin-top:62px;
+}
+
+.section04{
+    height: 860px;
+    margin-top: -12px;
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section04-bg.png) 0 0px no-repeat #444;
+}
+.section04 h2{
+    font-size: 60px;
+    color: #d6d6d6;
+    position: absolute;
+    z-index: 4;
+    left: 943px;
+    margin-top: 140px;
+}
+.section04Left{
+    height: 600px;
+    width: 100%;
+}
+.section04Left,.section04Right{
+    position: relative;
+    color: #d6d6d6;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+}
+.section04Left .s4Images{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section04-email.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 968px;
+    top: 280px;
+}
+.section04Left .font01{
+    position: absolute;
+    left: 950px;
+    top: 400px;
+}
+.section04Left .font02{
+    position: absolute;
+    left: 950px;
+    top: 540px;
+}
+.section04Right .s4Images{
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section04-news.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 1300px;
+    top: -322px;
+}
+.section04Right .s4Images:hover{
+}
+.section04Right .font01{
+    position: absolute;
+    left: 1300px;
+    top:-180px;
+}
+.section04Left div.font01 span,.section04Right a.font01 span{
+    color: white;
+    font-weight: bolder;
+}
+.section04Right .font02{
+    position: absolute;
+    left: 1300px;
+    top: -40px;
+    display: inline-block;
+}
+.section04Right :hover{
+    text-decoration: underline;
+}
+
+/*使用伪类对象替换小箭头图片(效果时箭头不美观可能是字体的原因)*/
+a.font02:after {
+    content:url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section04-arrow.png);
+    height: 22px;
+    width: 16px;
+    position: absolute;
+    left: 184px;
+}
+.arrow{
+    height: 22px;
+    width: 16px;
+    position: absolute;
+    left: 275px;
+    top: 0px;
+}
+
+.is-visible .handle {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+.section06 {
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/sound/6-2.jpg) no-repeat bottom #FFF;
+    height: 1080px;
+}
+
+.section06 .leader {
+    position: absolute;
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/sound/6-1.png) no-repeat;
+    width: 832px;
+    height: 646px;
+    left: 557px;
+    bottom: 0;
+    z-index: 3
+}
+
+.section06 .signal {
+    position: relative;
+    height: 100%;
+}
+
+.section06 .signal .s0,
+.section06 .signal .s1,
+.section06 .signal .s2,
+.section06 .signal .s3,
+.section06 .signal .s4 {
+    position: absolute;
+    background: url(https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/sound/6-3.png) no-repeat;
+    width: 1070px;
+    height: 179px;
+    left: 425px;
+    bottom: 100px;
+    opacity: 0;
+    animation: zoom 5s;
+    -moz-animation: zoom 5s;
+    -webkit-animation: zoom 5s;
+    -o-animation: zoom 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.section06 .signal .s1 {
+    animation-delay: -3s;
+    -webkit-animation-delay: -3s;
+}
+
+.section06 .signal .s2 {
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+
+.section06 .signal .s3 {
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+.section06 .signal .s4 {
+    animation-delay: -6s;
+    -webkit-animation-delay: 6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(.1);
+        opacity: 1
+    }
+    to {
+        transform: scale(2.5);
+        opacity: 0
+    }
+}
+
+@-moz-keyframes zoom {
+    from {
+        -moz-transform: scale(.1);
+        opacity: 1
+    }
+    to {
+        -moz-transform: scale(2.5);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(.1);
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(2.5);
+        opacity: 0
+    }
+}
+
+@-o-keyframes zoom {
+    from {
+        -o-transform: scale(.1);
+        opacity: 1
+    }
+    to {
+        -o-transform: scale(2.5);
+        opacity: 0
+    }
+}
+
+.sectionEnd {
+    background-image: url(http://7o4yva.com1.z0.glb.clouddn.com/h1/images/sound/end.jpg)
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="commonCtrl" class="ng-scope">
+<head>
+    <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <title ng-bind="site_title" class="ng-binding">XGIMI Smart LED home projector</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="XGIMI,LED">
+    <meta name="description" content="XGIMI Offical Website">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="bookmark" type="image/x-icon" href="img/favicon.ico">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body ng-controller="supportCtrl" class="ng-scope" data-pinterest-extension-installed="cr2.0.5">
+<div  class="ng-scope">
+    <style class="ng-scope">
+
+    .nav-header,.home-main{
+        margin-top: -10px;
+    }
+    .scollap{
+        width: 100%;
+        background-color: #777;
+    }
+    .nav-header .items{
+        width: 100%;
+        height: 80px;
+        background-color: #EFEFEF;
+        position: relative;
+        display: inline-block;
+        /*display: none;*/
+    }
+    .nav-header .items a{
+        display: inline-block;
+        width: 160px;
+        height: 100px;
+        float: left;
+        color: #555;
+    }
+    .nav-header .items a:hover{
+        color:#444;
+    }
+    .nav-header .items dl{
+        display: inline-block;
+        margin-top: -2px;
+        text-align: center;
+        position: absolute;
+        margin-left: -54px;
+    }
+    .nav-header .items a:nth-child(1){
+        margin-left:105px;
+    }
+    .nav-header .items a dt img {
+        width: 98px;
+        margin-top: -14px;
+    }
+    .nav-header .items dd{
+        position: absolute;
+        top: 16px;
+    }
+    .nav-header .items a:nth-child(2) dd{
+        margin-left: 30px;
+    }
+    .left01{
+
+    }
+    .left02{
+        margin-left: 30px;
+    }
+    .op{
+        /*background-color: rgba(0,0,0,0);*/
+    }
+    .f{
+        color:#555;
+        margin-left:16px;
+    }
+    .header-bg{
+        width: 100%;
+        height: 66px;
+        position: absolute;
+        top: 0;
+        background: #000;
+        z-index: 30;
+    }
+    .header-s {
+        height: 80px;
+        overflow: hidden;
+        width: 100%;
+        transition: height .8s ease;
+    }
+    .header-s .container{
+        line-height: 90px;
+    }
+    .header-s .nav-logo{
+        margin-top: 6px;
+    }
+    .header-s.tr{
+        height: 170px;
+    }
+</style>
+
+    <div class="nav-header op ng-scope">
+        <div class="scollap op"></div>
+        <div class="header-s">
+            <div class="container clearfix main">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="h1.html" class="bg ">H1</a></li>
+                        <li class="z4header"><a href="Z4.html" class="bg">Серія XGiMi Z4</a></li>
+                        <li><a href="support.html" class="bg"> Підтримка</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items">
+                <div class="container">
+                    <a href="Z4.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4_jg.png" alt="">
+                            </dt>
+                            <dd class=" f f1 d">Z4 Aurora</dd>
+                        </dl>
+                    </a>
+                    <a href="Z4Air.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4air.png" alt="">
+                            </dt>
+                            <dd class=" f d">Z4 Air</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" class="ng-scope">
+        var header=$(".nav-header");
+        var col=$(".scollap");
+        col.addClass("op");
+        header.addClass("op");
+        $(".z4header").hover(function() {
+            $(".header-s").addClass("tr");
+            // header.addClass("tr").removeClass("op");
+            // col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+        $(".items").hover(function() {
+            $(".header-s").addClass("tr");
+// header.addClass("tr").removeClass("op");
+//     col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+
+        $(function() {
+                $(".download-menu a").click(function(e) {
+                e.preventDefault();
+                $(".download-menu a").removeClass('active');
+                $(this).addClass('active');
+                        if ($("a.z4").hasClass("active")) {
+                            $("ul#down-Z4").show();
+                            $("ul#down-Z4Air").hide();
+                        } else if ($("a.z4air").hasClass("active")) {
+                            $("ul#down-Z4").hide();
+                            $("ul#down-Z4Air").show();
+                        }
+            })
+        });
+    </script>
+</div>
+<style type="text/css">
+    .left01 {
+        margin-left: -32px;
+    }
+    .nav-header .items a:nth-child(1) {
+        margin-left: 176px;
+    }
+</style>
+<div class="home-main posit-con">
+    <div class="posit-con-abs"><h1>Підтримка</h1>
+    <h2>Завжди охочі допомогти, коли Ви цього потребуєте</h2></div>
+    <img src="img/banner/support.jpg">
+</div>
+<div class="support-download">
+    <div class="container">
+        <div class="download-menu clearfix">
+            <a class="z4 active"   ng-click="changeDownload(0)" title="Z4 Aurora"></a>
+            <a class="z4air"   ng-click="changeDownload(1)" title="Z4Air"></a>
+        </div>
+        <div class="download-info clearfix">
+            <ul id="down-Z4">
+                <li style="width: 100%;">
+                    <p>Пакет Force Brush 1.5.0</p>
+                    <p><a href="https://s3.amazonaws.com/file.xgimi.net/z4xp/GIMI_NAPOLI_Z4XP_EN_WP.bin" class="download">Download<span></span></a></p>
+                </li>
+                <li style="width:100%;">
+                    <p>Керівництво користувача Z4 Aurora</p>
+                    <p><a href="file/Z4_Aurora_User_Guide.pdf" class="download">Download<span></span></a></p>
+                </li>
+            </ul>
+            <ul id="down-Z4Air" style="display: none;">
+                <li style="width:100%;border-right: none;">
+                    <p>Прошивка Z4Air</p>
+                    <p><a href="https://s3.amazonaws.com/file.xgimi.net/firmware/z4air/1.5.0/GIMI_MADISON_Z4AIR_WPM_16.bin" class="download">Download<span></span></a></p>
+                </li>
+                <li style="width:100%;">
+                    <p> Керівництво користувача Z4Air</p>
+                    <p><a href="file/Z4_Aurora_User_Guide.pdf" class="download" target="_blank">Download<span></span></a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="support-info">
+    <div class="container">
+        <div class="support-video">
+            <h3>FAQS</h3>
+            <div class="slideBox">
+                <div class="bd">
+                    <div class="tempWrap" style="overflow:hidden; position:relative; width:1140px">
+                        <div class="tempWrap" style="overflow: hidden; position: relative; width: auto;"><ul style="width: 6840px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -4560px;"><li class="clone" style="float: left; width: 1140px;">
+                            <div class="video-main">
+                                <img src="img/banner/supportVideo01.jpg">
+                                <a href="javascript:;" class="play" id="video1"></a>
+                            </div>
+                        </li>
+                            <li class="clone" style="float: left; width: 1140px;">
+                                <div class="video-main">
+                                    <img src="img/banner/supportVideo02.jpg">
+                                    <a href="javascript:;" class="play" id="video2"></a>
+                                </div>
+                            </li>
+                            <li style="float: left; width: 1140px;">
+                                <div class="video-main">
+                                    <img src="img/banner/supportVideo01.jpg">
+                                    <a href="javascript:;" class="play" id="video1"></a>
+                                </div>
+                            </li>
+                            <li style="float: left; width: 1140px;">
+                                <div class="video-main">
+                                    <img src="img/banner/supportVideo02.jpg">
+                                    <a href="javascript:;" class="play" id="video2"></a>
+                                </div>
+                            </li>
+                            <li class="clone" style="float: left; width: 1140px;">
+                                <div class="video-main">
+                                    <img src="img/banner/supportVideo01.jpg">
+                                    <a href="javascript:;" class="play" id="video1"></a>
+                                </div>
+                            </li>
+                            <li class="clone" style="float: left; width: 1140px;">
+                                <div class="video-main">
+                                    <img src="img/banner/supportVideo02.jpg">
+                                    <a href="javascript:;" class="play" id="video2"></a>
+                                </div>
+                            </li></ul></div>
+                    </div>
+                </div>
+                <div class="hd">
+                    <ul>
+                        <li class="on"><li class="">1</li><li class="">2</li><li class="">3</li><li class="on">4</li></li><li><li>1</li><li>2</li><li>3</li><li>4</li></li>
+                    </ul>
+                </div>
+                <a class="arrowbtn prev" href="javascript:void(0)"></a>
+                <a class="arrowbtn next" href="javascript:void(0)"></a>
+            </div>
+        </div>
+        <div class="support-faq clearfix">
+            <ul>
+                <li>
+                    <p>Як виникла ідея створення  Z4 Aurora?</p>
+                    <div class="answer">Нашу команду складають люди, які займаються виробництвом  дисплеїв, і ось ми помітили, что сучасні телевізори занадто тяжкі та дорогі. Ми захотіли створити простий та доступний смарт проектор для домашнього кінотеатру. І от, після двох років розробки та тисячі тестів, ми створили  Z4 Aurora.</div>
+                </li>
+                <li>
+                    <p>Які мови підтримує  Z4 Aurora?</p>
+                    <div class="answer">Z4 Aurora підтримує англійську, іспанську, французьку, німецьку, китайську (спрощену), китайську (традиційну), російську, італійську, португальську, тайську мови.</div>
+                </li>
+                <li>
+                    <p>Коли настає час перегріву проектора?</p>
+                    <div class="answer">Z4 Aurora використовує світлодіодну LED лампу, працездатність якої складає 30 000 годин.  Вентилятор Aurora працює ефективно та безшумно, і не має загрози перегріву.</div>
+                </li>
+                <li>
+                    <p>Чи піклується Z4Aurora про навколишнє середовище?</p>
+                    <div class="answer">Енергоємність Z4Aurora складає 48-90 Вт, у той час як енергоємність 65-дюймового LCD TV - 550-560 Вт. Це означає, що енергія ефективно зберігається.</div>
+                </li>
+                <li>
+                    <p>Чи може Z4Aurora передавати файли через USB порт?</p>
+                    <div class="answer">Так, ви можете передавати файли через USB 2.0 та 3.0 порти. Z4Aurora піідтримує MP4, AVI, MKV, 3D, 4K та Blu Ray відео формати.
+                        Він також підтримує  фото, Microsoft Office files та файли-додатки системи Android. </div>
+                </li>
+                <li>
+                    <p>Чи підтримує Z4 Aurora ігрову консоль?</p>
+                    <div class="answer">Aurora може бути під'єднана до будь-якої ігрової консолі (PS4, Xbox, і тому подібне), яка підтримує HDMI візуальне відображення.</div>
+                </li>
+            </ul>
+        </div>
+        <div class="support-more"><a href="faq.html">Детальніше <font style="font-size: 12px;">&gt;</font></a></div>
+    </div>
+</div>
+<div  class="ng-scope">
+    <div class="nav-footer ng-scope">
+        <div class="container">
+            <div class="nav-service clearfix">
+                <div class="nav-links clearfix">
+                    <ul>
+                        <li>КОМПАНІЯ</li>
+                        <li><a href="http://mi.ua/company/about/">Про компанію Xiaomi Tech</a></li>
+                        <li><a href="http://mi.ua/company/investors/">Партнерам</a></li>
+                        <li><a href="http://mi.ua/company/contacts/">Контакти</a></li>
+                        <li><a href="http://miui.ua/">MIUI</a></li>
+                        <li><a href="http://mi.ua/company/unlock-your-mi-device/">Unlock Your Mi Device</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ВИГІДНО</li>
+                        <li><a href="http://mi.ua/profitably/delivery/">Доставка та оплата</a></li>
+                        <li><a href="http://mi.ua/profitably/credit/">Придбати в розстрочку</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-protect/">Mi Protect</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-trade-in/">Mi Trade-in</a></li>
+                        <li><a href="http://mi.ua/profitably/podarunkovi-sertifikati/">Подарункові сертифікати</a></li>
+                        <li><a href="http://mi.ua/profitably/promo/">Актуальні акції</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ЗРУЧНО</li>
+                        <li><a href="http://mi.ua/easy/change-and-returns/">Обмін та повернення без проблем</a></li>
+                        <li><a href="http://mi.ua/easy/warranty/">Гарантія</a></li>
+                        <li><a href="http://mi.ua/easy/service/">Сервіс</a></li>
+                        <li><a href="http://mi.ua/easy/check-serial-number/">Перевірка Серійного Номеру</a></li>
+                        <li><a href="http://mi.ua/easy/android-mi-store-ukraine-/">Додаток Android “Mi Store Ukraine” </a></li>
+                    </ul>
+                    <ul>
+                        <li>НАШІ ПРОЕКТИ</li>
+                        <li><a href="http://mi.ua/nashi-proekti/blagodiyni-proekti/">Благодійні проекти</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/pridbati-zi-skladu-v-kitai/">Придбати зі складу в Китаї</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/partneri/">Наші партнери</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-copyright">
+                <span><img src="https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/market/logo.png"></span>
+                <span id="copyright">veoles</span>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/facebook-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/MiUkraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/twitter-icon1.png">
+                        </div>
+                    </a>
+                    <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/youtube-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/google-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://vk.com/mi_ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vkontakte_i1.png">
+                        </div>
+                    </a>
+                    <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vimeo-icon1.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<script type="text/javascript" src="js/tinybox.js"></script>
+<script>
+    var content1 = '<video id="xgimi_video_1" class="video-js vjs-default-skin" autoplay controls preload="none" width="690" height="390" poster="" data-setup="{}" style="background-color:#E3E3E3;"><source src="images/z4_aurora_faq.mp4" type="video/mp4"/></video>';
+    var content2 = '<video id="xgimi_video_2" class="video-js vjs-default-skin" autoplay controls preload="none" width="690" height="390" poster="" data-setup="{}" style="background-color:#E3E3E3;"><source src="images/brightness_comparison.mp4" type="video/mp4"/></video>';
+    T$('video1').onclick = function(){TINY.box.show(content1,0,690,390,1)};
+    T$('video2').onclick = function(){TINY.box.show(content2,0,690,390,1)};
+    $(document).bind('keydown', 'esc',function (evt){
+        TINY.box.hide();
+    });
+</script>
+<script src="./js/video/video.js"></script>
+<script>
+    videojs.options.flash.swf = "./js/video/video-js.swf";
+</script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.2.js"></script>
+<script>
+    $(".slideBox").slide({titCell:".hd li", mainCell:".bd ul", effect:"leftLoop",vis:"auto", autoPlay:true, autoPage:true, trigger:"click"});
+</script>
+</body>
+</html>

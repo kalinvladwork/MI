@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="commonCtrl" class="ng-scope">
+<head>
+    <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <title ng-bind="site_title" class="ng-binding">XGIMI Smart LED home projector</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="High-end theater experience w/5min setup | 1080p LED projector, Harman Kardon stereo &amp; Android OS. | Crowdfunding is a democratic way to support the fundraising needs of your community. Make a contribution today! " content="{$description}">
+    <meta name="High-end theater experience w/5min setup | 1080p LED projector, Harman Kardon stereo &amp; Android OS. | Crowdfunding is a democratic way to support the fundraising needs of your community. Make a contribution today! " content="{$keywords}">
+    <link rel="shortcut icon" type="image/x-icon" href="h1/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="h1/img/favicon.ico">
+    <link rel="bookmark" type="image/x-icon" href="h1/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/com.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <link href="css/media.css" rel="stylesheet">
+
+<body data-pinterest-extension-installed="cr2.0.5">
+<!--desktop header-->
+<div  class="ng-scope desktop-header">
+    <style class="ng-scope">
+
+    .nav-header,.home-main{
+        margin-top: -10px;
+    }
+    .scollap{
+        width: 100%;
+        background-color: #777;
+    }
+    .nav-header .items{
+        width: 100%;
+        height: 80px;
+        background-color: #EFEFEF;
+        position: relative;
+        display: inline-block;
+        /*display: none;*/
+    }
+    .nav-header .items a{
+        display: inline-block;
+        width: 160px;
+        height: 100px;
+        float: left;
+        color: #555;
+    }
+    .nav-header .items a:hover{
+        color:#444;
+    }
+    .nav-header .items dl{
+        display: inline-block;
+        margin-top: -2px;
+        text-align: center;
+        position: absolute;
+        margin-left: -54px;
+    }
+    .nav-header .items a:nth-child(1){
+        margin-left:105px;
+    }
+    .nav-header .items a dt img {
+        width: 98px;
+        margin-top: -14px;
+    }
+    .nav-header .items dd{
+        position: absolute;
+        top: 16px;
+    }
+    .nav-header .items a:nth-child(2) dd{
+        margin-left: 30px;
+    }
+    .left01{
+
+    }
+    .left02{
+        margin-left: 30px;
+    }
+    .op{
+        /*background-color: rgba(0,0,0,0);*/
+    }
+    .f{
+        color:#555;
+        margin-left:16px;
+    }
+    .header-bg{
+        width: 100%;
+        height: 66px;
+        position: absolute;
+        top: 0;
+        background: #000;
+        z-index: 30;
+    }
+    .header-s {
+        height: 80px;
+        overflow: hidden;
+        width: 100%;
+        transition: height .8s ease;
+    }
+    .header-s .container{
+        line-height: 90px;
+    }
+    .header-s .nav-logo{
+        margin-top: 6px;
+    }
+    .header-s.tr{
+        height: 170px;
+    }
+</style>
+    <div class="nav-header op ng-scope">
+        <div class="scollap op"></div>
+        <div class="header-s">
+            <div class="container clearfix main">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="h1.html" class="bg ">H1</a></li>
+                        <li class="z4header"><a href="Z4.html" class="bg">Серія XGiMi Z4</a></li>
+                        <li><a href="support.html" class="bg"> Підтримка</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items">
+                <div class="container">
+                    <a href="Z4.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4_jg.png" alt="">
+                            </dt>
+                            <dd class=" f f1 d">Z4 Aurora</dd>
+                        </dl>
+                    </a>
+                    <a href="Z4Air.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4air.png" alt="">
+                            </dt>
+                            <dd class=" f d">Z4 Air</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" class="ng-scope">
+        var header=$(".nav-header");
+        var col=$(".scollap");
+        col.addClass("op");
+        header.addClass("op");
+        $(".z4header").hover(function() {
+            $(".header-s").addClass("tr");
+            // header.addClass("tr").removeClass("op");
+            // col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+        $(".items").hover(function() {
+            $(".header-s").addClass("tr");
+// header.addClass("tr").removeClass("op");
+//     col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+    </script>
+</div>
+<style type="text/css">
+    .nav-header .items dd {position: absolute;left: -26px;font-size: 14px;width: 90px;}
+    .f1{margin-left: 30px;}
+</style>
+<!--end desktop header-->
+
+<!--mobile header-->
+<div class="ng-scope mobile-header">
+    <div class="menu ng-scope">
+        <a class="list" id="menuBtn" onclick="showMenu(this)"></a>
+    </div>
+    <div class="menu-list ng-scope" style="display: none;">
+        <ul>
+            <li><a href="h1.html">H1</a></li>
+            <li><a href="Z4.html">Z4 Aurora</a></li>
+            <li><a href="Z4Air.html">Z4Air</a></li>
+            <li><a href="about.html">Про продукт</a></li>
+            <li><a href="faq.html">Підтримка</a></li>
+        </ul>
+    </div>
+    <script class="ng-scope">
+        function showMenu(obj){
+            $(".menu-list").slideToggle();
+            if($(obj).hasClass("close")){
+                $(obj).removeClass("close");
+            }else{
+                $(obj).addClass("close");
+            }
+        }
+    </script>
+</div>
+<!--end mobile header-->
+
+<div class="section_m container faq">
+    <style type="text/css">
+        .faq { text-align: left; }
+    </style>
+    <ul>
+        <li>
+            <p>Команда XGIMI</p>
+            <p>
+                Ми є молодою, енергійною та швидкозростаючою командою, яка складається з більш як 200 людей, складеною групою досвідчених
+                інженерів-технологів. Наша мрія - створити найкращі, найдоступніші за ціною, широкоформатні проекційнні екрани у світі,
+                надаючи кожній сім'ї можливість мати власний домашній кінотеатр. Ми з радістю повідомляємо, що наша  новітня технологія
+                отримала фінансування краудфандингової платформи  Indiegogo. Ми бажаємо  тут створити та розвивати дивовижне
+                співтовариство  XGIMI. Ми знаємо, що з вашою допомогою, ми створимо найкращий проектор в світі. Приєднатися до сім'ї XGIMI!
+            </p>
+        </li>
+    </ul>
+</div>
+
+<div class="bd section_d">
+    <div class="overall">
+<div class="space"></div>
+<div id="secondNav" class="second-nav secondNav">
+    <div class="container">
+        <a href="h1.html"><span>H1</span></a>
+        <ul class="secondNavItem">
+            <li><a href="h1.html">Особливості</a></li>
+            <li><a href="display.html">Якість зображення</a></li>
+            <li><a href="sound.html">Стерео </a></li>
+            <li><a href="function.html">Технічні характеристики</a></li>
+            <li><a href="#" class="isTure">Про продукт</a></li>
+        </ul>
+    </div>
+</div>
+<div class="layerTo"></div>
+<div class="section section01 is-visible">
+    <div class="con sa">
+        <div class="content">
+            <!-- <div class="pic01"> -->
+            <h2 class="title webfont">Команда XGIMI</h2>
+            <!-- </div> -->
+            <p class="desc">
+                Ми є молодою, енергійною та швидкозростаючою командою, яка складається з більш як 200 людей, складеною групою досвідчених
+                <br/> інженерів-технологів. Наша мрія - створити найкращі, найдоступніші за ціною, широкоформатні проекційнні екрани у світі,
+                <br/> надаючи кожній сім'ї можливість мати власний домашній кінотеатр. Ми з радістю повідомляємо, що наша  новітня технологія
+                <br/> отримала фінансування краудфандингової платформи  Indiegogo. Ми бажаємо  тут створити та розвивати дивовижне
+                <br/>співтовариство  XGIMI. Ми знаємо, що з вашою допомогою, ми створимо найкращий проектор в світі. Приєднатися до сім'ї XGIMI!
+            </p>
+        </div>
+    </div>
+</div>
+<div class="section02">
+    <div class="section0201">
+        <div class="eWidth">
+            <div class="photo dLeft"></div>
+            <div class="abstract dRight">
+                <h2 class="title">APOLL ZHONG - Засновник та  CEO</h2>
+                <div class="desc">Аполл працював в MStar Semiconductor на Тайвані і має 9-річний
+                    <br/> досвід роботи в галузі телебачення і обробки відео.
+                    <br/>Він заснував XGIMI в 2013 році, щоб стати
+                    <br/> піонером у промисловості піко-проекторів.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section0202">
+        <div class="eWidth">
+            <div class="photo dRight"></div>
+            <div class="abstract dLeft">
+                <h2 class="title">STEVEN XIAO - Співзасновник та COO</h2>
+                <div class="desc">Стівен має 10-річний досвід роботи з Huawei в якості
+                    <br/> віце-президента з управління командою лінійки
+                    <br/> продуктів 4G і в якості керівника діяльності компанії.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section0203">
+        <div class="eWidth">
+            <div class="photo dLeft"></div>
+            <div class="abstract dRight">
+                <h2 class="title">AARON LIAO - Співзасновник та CFO</h2>
+                <div class="desc">Аарон є дипломованим бухгалтером (CPA) з більш ніж
+                    <br/> 5-річним досвідом роботи у компанії KPMG.
+                    <br/>Він був керував фінансами та закордонними
+                    <br/>відділами маркетингу.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section0204">
+        <div class="eWidth">
+            <div class="photo dRight"></div>
+            <div class="abstract dLeft">
+                <h2 class="title">LORI YIN- Співзасновник</h2>
+                <div class="desc">Лорі є серійним підприємцем і має більш
+                    <br/>ніж 8-річний досвід роботи в R & D - зокрема,
+                    <br/>в області кінопроекторів та
+                    <br/>логістики.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section0205">
+        <div class="eWidth">
+            <div class="photo dLeft"></div>
+            <div class="abstract dRight">
+                <h2 class="title">JIM LIU - головний інженер</h2>
+                <div class="desc">Джим має більш ніж 10-річний досвід роботи
+                    <br/>в Skyworth та Taiwan Mstar в якості експерта з якості
+                    <br/>зображення в телебаченні і в області обробки відео.
+                    <br/>Він був керівником досліджень і розробки технологій.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section0206">
+        <div class="eWidth">
+            <div class="photo dRight"></div>
+            <div class="abstract dLeft">
+                <h2 class="title">JERI WU - Директор технічного департаменту</h2>
+                <div class="desc">Джері працював уTencent в якості старшого інженера.
+                    <br/>Він є відповідальним за сайт XGIMI, операційну систему,
+                    <br/>розробку додатків, а також надає технічну підтримку
+                    <br/>іншим департаментам.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section0207">
+        <div class="eWidth">
+            <div class="photo dLeft"></div>
+            <div class="abstract dRight">
+                <h2 class="title">IVY WU-Менеджер з маркетингу зовнішнього ринку</h2>
+                <div class="desc">Айві має ступінь магістра в Наньянському технологічному
+                    <br/>університеті в Сінгапурі. Вона брала участь у програмі
+                    <br/>Stanford-MSc Technopreneurship and Innovation.
+                    <br/>Айві відповідає за управління проектами кампаній Indiegogo.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section0208">
+        <div class="eWidth">
+            <div class="photo dRight"></div>
+            <div class="abstract dLeft">
+                <h2 class="title">SUMMER XIE - Маркетинговий аналітик</h2>
+                <div class="desc">Саммер - випускниця Університету Альберти в Канаді.
+                    <br/>Вона відповідальна за аналіз маркетингових даних та за
+                    <br/>охоплення аудиторії  на зовнішньому ринку.
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section03">
+    <div class="eWidth">
+        <div class="timeLine">
+            <h2>Хроніка подій</h2>
+            <span class="left01">2015</span>
+            <span class="left02">2016</span>
+            <ul class="timeLeft">
+                <li class="before">Вересень</li>
+                <li class="before">Жовтень</li>
+                <li class="before">Грудень</li>
+                <li>Січень</li>
+                <li>Лютий</li>
+                <li>Березень</li>
+                <li>Квітень</li>
+                <li>Травень</li>
+                <li>Червень</li>
+                <li>Липень</li>
+                <li>Серпень</li>
+                <li class="last">Вересень</li>
+                <li class="last">Листопад</li>
+                <li class="last">Грудень</li>
+            </ul>
+            <ul class="timeRight">
+                <li class="before">Аналіз ринку</li>
+                <li class="before">Стартування ідеї</li>
+                <li class="before">Підтвердження роботи функцій Н1</li>
+                <li>Втілення нових технологій та
+                    <br> закупівля матеріалів</li>
+                <li>Виготовлено основний промисловий зразок</li>
+                <li>Представлено та протестовано основний прототип</li>
+                <li>Тестування та налаштування якості звуку
+                    <br>Завершено втілення нових функцій Bluetooth колонки</li>
+                <li>Налаштовано та протестовано якість зображення і звуку,
+                    <br>функціонування дзеркального відображення дисплею
+                    <br>
+                </li>
+                <li>GUMI завершено та протестовано
+                    <br>XGIMI завершено мобільний додаток XGIMI</li>
+                <li>Згенеровано фінальний прототип.
+                    <br> Початок дрібномаштабного виробництва</li>
+                <li>Фінальне тестування та модифікація</li>
+                <li class="last">Стартування кампанії H1 Indiegogo </li>
+                <li class="last">Завершення кампанії H1 Indiegogo
+                    <br>Масове виробництво</li>
+                <li class="last">Фінансування H1  платформою  Indiegogo. Вітання!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--<div class="section04">-->
+    <!--<h2>Запитання?</h2>-->
+    <!--<div class="section04Left">-->
+        <!--<a href="mailto:service@xgimi.com" target="_blank">-->
+            <!--<div class="s4Images"></div>-->
+        <!--</a>-->
+        <!--<div class="font01"><span>Contact</span>-->
+            <!--<br>service@xgimi.com </div>-->
+        <!--<div class="font02">Для питань загального/технічного-->
+            <!--<br>характуру та питань преси</div>-->
+    <!--</div>-->
+    <!--<div class="section04Right">-->
+        <!--<a class="s4Images"></a>-->
+        <!--<a class="font01" href="new.html"><span>Press Release</span></a>-->
+        <!--<a class="font02" href="https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/downloadhere.rar">Download Press Kit Here-->
+            <!--<img class="arrow" src="https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/about/section04-arrow.png">-->
+        <!--</a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="displaypics">-->
+    <!--<div class="lastpicv">-->
+        <!--<div class="container conW">-->
+            <!--<strong class="slogn">BRING H1 HOME TODAY</strong>-->
+            <!--<a class="mybtn" href="https://www.indiegogo.com/projects/h1-immersive-home-theater-that-fits-in-your-hands--2/?btm" target="_blank">PRE-ORDER NOW</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="scrollTop"></div>
+</div>
+</div>
+
+
+<div  class="ng-scope desktop-footer">
+    <div class="nav-footer ng-scope">
+        <div class="container">
+            <div class="nav-service clearfix">
+                <div class="nav-links clearfix">
+                    <ul>
+                        <li>КОМПАНІЯ</li>
+                        <li><a href="http://mi.ua/company/about/">Про компанію Xiaomi Tech</a></li>
+                        <li><a href="http://mi.ua/company/investors/">Партнерам</a></li>
+                        <li><a href="http://mi.ua/company/contacts/">Контакти</a></li>
+                        <li><a href="http://miui.ua/">MIUI</a></li>
+                        <li><a href="http://mi.ua/company/unlock-your-mi-device/">Unlock Your Mi Device</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ВИГІДНО</li>
+                        <li><a href="http://mi.ua/profitably/delivery/">Доставка та оплата</a></li>
+                        <li><a href="http://mi.ua/profitably/credit/">Придбати в розстрочку</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-protect/">Mi Protect</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-trade-in/">Mi Trade-in</a></li>
+                        <li><a href="http://mi.ua/profitably/podarunkovi-sertifikati/">Подарункові сертифікати</a></li>
+                        <li><a href="http://mi.ua/profitably/promo/">Актуальні акції</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ЗРУЧНО</li>
+                        <li><a href="http://mi.ua/easy/change-and-returns/">Обмін та повернення без проблем</a></li>
+                        <li><a href="http://mi.ua/easy/warranty/">Гарантія</a></li>
+                        <li><a href="http://mi.ua/easy/service/">Сервіс</a></li>
+                        <li><a href="http://mi.ua/easy/check-serial-number/">Перевірка Серійного Номеру</a></li>
+                        <li><a href="http://mi.ua/easy/android-mi-store-ukraine-/">Додаток Android “Mi Store Ukraine” </a></li>
+                    </ul>
+                    <ul>
+                        <li>НАШІ ПРОЕКТИ</li>
+                        <li><a href="http://mi.ua/nashi-proekti/blagodiyni-proekti/">Благодійні проекти</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/pridbati-zi-skladu-v-kitai/">Придбати зі складу в Китаї</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/partneri/">Наші партнери</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-copyright">
+                <span><img src="https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/market/logo.png"></span>
+                <span id="copyright">veoles</span>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/facebook-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/MiUkraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/twitter-icon1.png">
+                        </div>
+                    </a>
+                    <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/youtube-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/google-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://vk.com/mi_ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vkontakte_i1.png">
+                        </div>
+                    </a>
+                    <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vimeo-icon1.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--mobile footer-->
+<div class="ng-scope mobile-footer">
+    <div class="footer ng-scope">
+        <div class="p2">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/facebook-icon1.png">
+                    </span>
+                </a>
+                <a href="https://twitter.com/MiUkraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/twitter-icon1.png">
+                    </span>
+                </a>
+                <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/youtube-icon1.png">
+                    </span>
+                </a>
+                <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/google-icon1.png">
+                    </span>
+                </a>
+                <a href="https://vk.com/mi_ukraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/vkontakte_i1.png">
+                    </span>
+                </a>
+                <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/vimeo-icon1.png">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <p class="p3">
+            <a href="mailto:info@xiaomi.ua">
+                <img src="./img/s_08.jpg" style="margin-bottom: 3px;"><br>info@xiaomi.ua
+            </a>
+            <a href="tel:0 (800) 60-44-71">
+                <img src="./img/s_10.jpg"><br>0 (800) 60-44-71
+            </a>
+        </p>
+    </div>
+</div>
+<!-- end mobile footer-->
+
+<script src="js/pageClick.js" type="text/javascript" charset="utf-8"></script>
+
+
+</body>
+</html>
+
+
+
+

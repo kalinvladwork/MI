@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp" ng-controller="commonCtrl" class="ng-scope">
+<head>
+    <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <meta charset="utf-8">
+    <title>Features</title>
+    <meta name="High-end theater experience w/5min setup | 1080p LED projector, Harman Kardon stereo &amp; Android OS. | Crowdfunding is a democratic way to support the fundraising needs of your community. Make a contribution today! " content="{$description}">
+    <meta name="High-end theater experience w/5min setup | 1080p LED projector, Harman Kardon stereo &amp; Android OS. | Crowdfunding is a democratic way to support the fundraising needs of your community. Make a contribution today! " content="{$keywords}">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/h1.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="css/com.css" rel="stylesheet">
+    <link href="css/h1.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <link href="css/media.css" rel="stylesheet">
+</head>
+<body data-pinterest-extension-installed="cr2.0.5">
+
+<!--desktop header-->
+<div class="ng-scope desktop-header">
+    <style class="ng-scope">
+
+    .nav-header,.home-main{
+        margin-top: -10px;
+    }
+    .scollap{
+        width: 100%;
+        background-color: #777;
+    }
+    .nav-header .items{
+        width: 100%;
+        height: 80px;
+        background-color: #EFEFEF;
+        position: relative;
+        display: inline-block;
+        /*display: none;*/
+    }
+    .nav-header .items a{
+        display: inline-block;
+        width: 160px;
+        height: 100px;
+        float: left;
+        color: #555;
+    }
+    .nav-header .items a:hover{
+        color:#444;
+    }
+    .nav-header .items dl{
+        display: inline-block;
+        margin-top: -2px;
+        text-align: center;
+        position: absolute;
+        margin-left: -54px;
+    }
+    .nav-header .items a:nth-child(1){
+        margin-left:105px;
+    }
+    .nav-header .items a dt img {
+        width: 98px;
+        margin-top: -14px;
+    }
+    .nav-header .items dd{
+        position: absolute;
+        top: 16px;
+    }
+    .nav-header .items a:nth-child(2) dd{
+        margin-left: 30px;
+    }
+    .left01{
+
+    }
+    .left02{
+        margin-left: 30px;
+    }
+    .op{
+        /*background-color: rgba(0,0,0,0);*/
+    }
+    .f{
+        color:#555;
+        margin-left:16px;
+    }
+    .header-bg{
+        width: 100%;
+        height: 66px;
+        position: absolute;
+        top: 0;
+        background: #000;
+        z-index: 30;
+    }
+    .header-s {
+        height: 80px;
+        overflow: hidden;
+        width: 100%;
+        transition: height .8s ease;
+    }
+    .header-s .container{
+        line-height: 90px;
+    }
+    .header-s .nav-logo{
+        margin-top: 6px;
+    }
+    .header-s.tr{
+        height: 170px;
+    }
+</style>
+
+    <div class="nav-header op ng-scope">
+        <div class="scollap op"></div>
+        <div class="header-s">
+            <div class="container clearfix main">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="h1.html" class="bg ">H1</a></li>
+                        <li class="z4header"><a href="Z4.html" class="bg">Серія XGiMi Z4</a></li>
+                        <li><a href="support.html" class="bg"> Підтримка</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items">
+                <div class="container">
+                    <a href="Z4.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4_jg.png" alt="">
+                            </dt>
+                            <dd class=" f f1 d">Z4 Aurora</dd>
+                        </dl>
+                    </a>
+                    <a href="Z4Air.html">
+                        <dl>
+                            <dt>
+                                <img src="images/z4air.png" alt="">
+                            </dt>
+                            <dd class=" f d">Z4 Air</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" class="ng-scope">
+        var header=$(".nav-header");
+        var col=$(".scollap");
+        col.addClass("op");
+        header.addClass("op");
+        $(".z4header").hover(function() {
+            $(".header-s").addClass("tr");
+            // header.addClass("tr").removeClass("op");
+            // col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+        $(".items").hover(function() {
+            $(".header-s").addClass("tr");
+// header.addClass("tr").removeClass("op");
+//     col.removeClass("op");
+        }, function() {
+            $(".header-s").removeClass("tr");
+            // header.removeClass("tr").addClass('op');
+            //  col.addClass("op");
+        })
+    </script>
+
+</div>
+<!--end desktop header-->
+
+<!--mobile header-->
+<div class="ng-scope mobile-header">
+    <div class="menu ng-scope">
+        <a class="list" id="menuBtn" onclick="showMenu(this)"></a>
+    </div>
+    <div class="menu-list ng-scope" style="display: none;">
+        <ul>
+            <li><a href="h1.html">H1</a></li>
+            <li><a href="Z4.html">Z4 Aurora</a></li>
+            <li><a href="Z4Air.html">Z4Air</a></li>
+            <li><a href="about.html">Про продукт</a></li>
+            <li><a href="faq.html">Підтримка</a></li>
+        </ul>
+    </div>
+    <script class="ng-scope">
+        function showMenu(obj){
+            $(".menu-list").slideToggle();
+            if($(obj).hasClass("close")){
+                $(obj).removeClass("close");
+            }else{
+                $(obj).addClass("close");
+            }
+        }
+    </script>
+</div>
+<!--end mobile header-->
+
+<div class="bd">
+<div class="overall">
+<div id="secondNav" class="second-nav  secondNav">
+    <div class="container">
+        <a href="h1.html"><span>H1</span></a>
+        <ul class="secondNavItem">
+            <li><a href="#" class="isTure">Особливості</a></li>
+            <li><a href="display.html">Якість зображення</a></li>
+            <li><a href="sound.html">Стерео </a></li>
+            <li><a href="function.html">Технічні характеристики</a></li>
+            <li><a href="about.html">Про продукт</a></li>
+        </ul>
+    </div>
+</div>
+<div class="section section01 is-visible">
+    <div class="masking"></div>
+    <div class="con">
+        <h2 class="title webfont">H1 Домашній кінотеатр з ефектом присутності, який вміщується у ваших руках</h2>
+    </div>
+    <img class="section_m" src="img/mobile/section01-m.jpg" alt="">
+    <video id="video" preload="">
+        <source src="images/h1.mp4" type="video/mp4">
+        <source src="images/h1.webm" type="video/webm">
+    </video>
+</div>
+<div class=" part02 ">
+    <div class="part02Top commonWidth">
+        <div class="part02Top1">
+            <h2 class="title">Поринай у розваги</h2>
+            <p class="desc">H1  - твій провідник у казковий світ</p>
+        </div>
+        <div class="part02Top2 commonWidth">
+            <div class="con">
+                <ul class="part02Top2Items">
+                    <li>
+                        <div class="itemImage imageContent1"></div>
+                        <div class="itemDecription">Роздільна здатність екрана  HD 1080p,
+                            <br> Smart LED проектор з високоякісною чистотою зображення</div>
+                    </li>
+                    <li>
+                        <div class="itemImage imageContent2"></div>
+                        <div class="itemDecription">Високоякісний вбудований стерео звук 45мм 
+                            <br> Bluetooth / WiFi гарнітури від Harman / Kardon  </div>
+                    </li>
+                    <li>
+                        <div class="itemImage imageContent3"></div>
+                        <div class="itemDecription">900 лм для максимально реалістичного зображення
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="itemImage imageContent4"></div>
+                        <div class="itemDecription">H1 може похвалитися Quadcore 1.75GHz CPU,
+                            <br>3 Гб оперативної пам'яті, підтримує широкі можливості для
+                            <br> перегляду відео, додатків та ігор</div>
+                    </li>
+                    <li>
+                        <div class="itemImage imageContent5"></div>
+                        <div class="itemDecription">H1 проектує кришталево чисте зображення
+                            <br> на 300" екран під любим кутом, та має широкий діапазон
+                            <br>корекції трапецеїдальних спотворень</div>
+                    </li>
+                    <li>
+                        <div class="itemImage imageContent6"></div>
+                        <div class="itemDecription">Має можливість конвертування відео з 2D у 3D формат
+                            <br>завдяки оптичному об'єктиву
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="part02Middle section_d">
+        <div class="con">
+            <img class="part02Logo-bg" src="images/abstract/section01H1.png">
+        </div>
+    </div>
+    <div class="part02Bottom section_d">
+        <div class="part02BottomItems">
+            <ul class="bottomItems">
+                <li>
+                    <div class="pics bottomPics0"></div>
+                    <div class="picsfont">Висока тривалість життя</div>
+                </li>
+                <!-- <li>
+                    <div class="pics bottomPics1"></div>
+                    <div class="picsfont">Hand gesture control</div>
+                </li> -->
+                <li>
+                    <div class="pics bottomPics2"></div>
+                    <div class="picsfont">Підтримка 4К (висока якість зображення)</div>
+                </li>
+                <li>
+                    <div class="pics bottomPics3"></div>
+                    <div class="picsfont">LED-освітлення  OSRAM</div>
+                </li>
+                <li>
+                    <div class="pics bottomPics4"></div>
+                    <div class="picsfont modes4">Технологія  DLP ((Digital Light Processing) від Texas Instruments</div>
+                </li>
+                <br>
+
+
+                <li>
+                    <div class="pics bottomPics5"></div>
+                    <div class="picsfont">Bluetooth</div>
+                </li>
+
+                <li>
+                    <div class="pics bottomPics7"></div>
+                    <div class="picsfont mde02">Широкий діапазон <br>корекції трапецеїдальних<br> спотворень</div>
+                </li>
+                <li>
+                    <div class="pics bottomPics6"></div>
+                    <div class="picsfont mde01">Дублювання екрана<br> ПК та смартфона</div>
+                </li>
+                <li>
+                    <div class="pics bottomPics8"></div>
+                    <div class="picsfont mde03">Управління за допомогою<br> Вашого смартфона</div>
+                </li>
+                <li>
+                    <div class="pics bottomPics9"></div>
+                    <div class="picsfont mde04">Blutooth пульт
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="part03 section_d">
+    <div class="content01">
+        <div class="con">
+            <div class="title">H1 для всіх</div>
+            <img src="images/part03top.png" class="part03Logo">
+        </div>
+    </div>
+    <div class="content02">
+        <div class="conLeft"></div>
+        <div class="conRight">
+            <div class="con2Font">
+                <div class="part03title ">Фільми та ТВ-шоу</div>
+                <div class="part03desc">Проглядайте Ваші улюблені фільми, тв-шоу,
+                    <br>кліпи з Netflix, Hulu та YouTube</div>
+            </div>
+        </div>
+    </div>
+    <div class="content03">
+        <div class="conLeft">
+            <div class="con2Font2">
+                <div class="part03title ">Для любителів пригод!</div>
+                <div class="part03desc">Приєднуйтесь до Н1 за допомогою смартфона або консолі,
+                    <br> та насолоджуйся грою!</div>
+            </div>
+        </div>
+        <div class="conRight"></div>
+    </div>
+    <div class="content04">
+        <div class="conLeft"></div>
+        <div class="conRight">
+            <div class="con2Font">
+                <div class="part03title ">МУЗИКА</div>
+                <div class="part03desc">Слухай улюблену музику  з Bluetooth
+                    <br> WiFi бас-підсилювачем від Harman
+                    <br> Kardon</div>
+            </div>
+        </div>
+    </div>
+    <div class="content05">
+        <div class="conLeft">
+            <div class="con2Font2">
+                <div class="part03title ">Бізнес</div>
+                <div class="part03desc">H1 легкий у налаштуванні та навігації,
+                    <br>що дозволяє Вам зосередитись на відпочинку
+                    <br>без жодних зусиль</div>
+            </div>
+        </div>
+        <div class="conRight"></div>
+    </div>
+</div>
+<div class="section section03">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Неперевершена 1080p проекція </h2>
+            <p class="desc">З роздільною здатністю HD 1080p,  Н1 має чисте зображення,
+                <br> а це набагато краще за стандартні проектори у 720р.</p>
+        </div>
+        <div class="features section_d">
+            <dl>
+                <dt class="webfont">1080p </dt>
+                <dd>Висока якість зобарження</dd>
+            </dl>
+            <dl>
+                <dt class="webfont"> 4К</dt>
+                <dd>Підтримка високого тиску</dd>
+            </dl>
+        </div>
+    </div>
+    <div id="drag" class="drag section_d"></div>
+    <div class="p720 section_d"></div>
+    <div class="p1080 section_d"></div>
+    <img src="img/mobile/section03-m.png" class="section_m" alt="">
+</div>
+
+<div class="section section04">
+    <div class="structure section_d">
+        <div class="i i-1">
+                        <span>
+                        <h3>Нове покоління якості зображення</h3>
+                      Відображення точних та яскравих кольорів <br>
+                            у якості HD 1920 х 1080,  <br>
+                            передача ваисокоякісних зображень нав поверхні 300 дюймів
+                    </span>
+        </div>
+        <div class="i i-2">
+                        <span>
+                        <h3>Супер висока точність масштабу  та фокуса</h3>
+                   З точністю у 0.06°, електродинамічний фокус <br> налаштовується без проблем
+
+                    </span>
+        </div>
+        <div class="i i-3">
+                        <span>
+                        <h3>Бас-підсилювач Harman/kardon</h3>
+                        Насолоджуйся високоякісним <br> вбудованим стерео звуком<br>  через динамік 45мм 
+                    </span>
+        </div>
+        <div class="i i-4">
+                        <span>
+                        <h3>Тихий та довговічний</h3>
+                       Два незалежних тепловідводи - вивід надлишкового тепла
+                    </span>
+        </div>
+        <div class="i i-5">
+                        <span>
+                        <h3>Вібруюча діафрагма бас-підсилювача </h3>
+                        Завдяки їй звук у вашому домі  <br>стане більш об'ємним. Відчуй себе у кінозалі!
+
+
+                    </span>
+        </div>
+    </div>
+    <div class="con">
+        <div class="content">
+            <h2 class="title webfont">Непервершена якість у кожній деталі</h2>
+        </div>
+    </div>
+    <img src="img/mobile/section02-m.png" alt="" class="section_m">
+</div>
+<div class="section section05">
+    <div class="lighting section_d">
+        <div class="l l-1"></div>
+        <div class="l l-2"></div>
+        <div class="l l-3"></div>
+        <div class="l l-4"></div>
+        <div class="l l-5"></div>
+        <div class="l l-6"></div>
+    </div>
+    <div class="con sa">
+        <div class="content section_d">
+            <h2 class="title webfont">LED освітлення<br>Не потребує технічного обслуговування</h2>
+            <p class="desc">
+                На відміну від традиційних проекторів, Н1 використовує
+                <br> високоефективне LED освітлення. Протягом 10 годин
+                <br>яскрівість та точність зображення не залишать
+                <br> Вас байдужими. H1 слугуватиме  Вам близько
+                <br> 10 років при щоденній 8годинній  роботі
+            </p>
+        </div>
+        <div class="content section_m">
+            <h2 class="title webfont">LED освітлення<br>Не потребує технічного обслуговування</h2>
+            <p class="desc">
+                На відміну від традиційних проекторів, Н1 використовує
+                високоефективне LED освітлення. Протягом 10 годин
+                яскрівість та точність зображення не залишать
+                Вас байдужими. H1 слугуватиме  Вам близько
+                10 років при щоденній 8годинній  роботі
+            </p>
+        </div>
+        <div class="features">
+            <dl>
+                <dt class="webfont">LED</dt>
+                <dd>Якісне джерело освітлення</dd>
+            </dl>
+            <dl>
+                <dt class="webfont">30000<span class="metric"></span></dt>
+                <dd> годин роботи</dd>
+            </dl>
+        </div>
+    </div>
+    <img srcset="img/mobile/section05-m-s.png 320w" src="img/mobile/section05-m.png" alt="" class="section_m">
+</div>
+<div class="section section06 section_d">
+    <div class="J_movePic"></div>
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">900 лм <br> на 300” дисплеї</h2>
+            <span class="brightTitle">Революція яскравості!</span>
+            <p class="desc">
+                Наша попередня модель  “Z4 Aurora”, звичайно ж, була чудовою.
+                <br>Але,коли  Z4 Aurora змінила свою гру,
+                <br> був народжений Н1!
+                <br>Він перетворив звичайні кольори
+                <br> в яскраві,
+                <br>які не втрачають своєї краси навіть удень.
+            </p>
+        </div>
+        <div class="brightness">
+            <ul>
+                <li><span class="l"><span class="t">H1</span></span>
+                </li>
+                <li><span class="l2"><span class="t">XGIMI Z4 Aurora</span></span>
+                </li>
+                <li><span class="l3"><span class="t">Традиційний LED  <br>Проектори</span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="section section07 section_d">
+    <div class="size">
+        <div class="min"><span>Традиційний 50” Дисплей</span></div>
+        <div class="max"><span>H1 масивний 300” Дисплей</span></div>
+    </div>
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Завороожуючий 300” дисплей</h2>
+            <p class="desc">
+                H1 підлаштовується до Ваших потреб. Він дуже зручний та компактний,
+                <br> і може перетворити будь-яке місце перебування на кінозалу.
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="section section08">
+    <div class="J_movePic section_d" data-move="40"></div>
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Н1 смарт-проектор<br>3D формат <br>Зображення</h2>
+            <p class="desc">
+                Для конвертації відео з 2D у 3D формат
+                <br>H1 використовує технологію  затвору
+                <br> DLP-проекторів (технологія кіно-класу).
+                <br> Скажіть "Бувай!" Вашому ТВ та "Привіт!" новому Н1.
+            </p>
+        </div>
+    </div>
+    <img src="img/mobile/section08-m.jpg" alt="" class="section_m">
+</div>
+
+<div class="section section09">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Оптичний зум зі збереженням якості</h2>
+            <p class="desc section_d">
+                Н1 пристосовується до розміру зображення, не впливаючи
+                <br> на його чіткість
+            </p>
+            <p class="desc section_m">
+                Н1 пристосовується до розміру зображення, не впливаючи на його чіткість
+            </p>
+        </div>
+        <div class="features">
+            <dl>
+                <dt class="webfont">1.1</dt>
+                <dd>Оптичний зум</dd>
+            </dl>
+            <dl>
+                <dt class="webfont">1.39-1.5:1</dt>
+                <dd>Проекція Rotio</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="opticalZoom section_d">
+        <div class="z z1"></div>
+        <div class="z z2"></div>
+        <div class="z z3"></div>
+    </div>
+
+    <img src="img/mobile/section07-m.png" alt="" class="section_m">
+</div>
+
+<div class="section section10">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont"> Н1 може легко підлаштовується у заданому напрямі </h2>
+            <p class="desc">Завдяки повній роздільній здатності екрана HD 1080p, високій контрастності LED та Keystone системі
+                <br>H1 проектирует кристально чистый 300 "экран практически под любым углом.</p>
+        </div>
+        <div class="features">
+            <dl>
+                <dt class="webfont">30°</dt>
+                <dd>Горизонтальне  +/-</dd>
+            </dl>
+            <dl>
+                <dt class="webfont">35°</dt>
+                <dd>Вертикальне  +/-</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="frame section_d"></div>
+    <div class="layer section_d">
+        <div class="machine"></div>
+        <div class="beam"></div>
+    </div>
+    <div class="angle webfont section_d">
+        <div class="bj"></div>
+        <div class="num">30°</div>
+    </div>
+
+    <img src="img/mobile/section04-m.png" alt="" class="section_m">
+</div>
+<div class="section section11 section_d">
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont"><span class="title01">H1 x Harman/Kardon</span><br>Вбудований підсилювач звуку  Harman Kardon  Чудова якість звучання</h2>
+            <p class="desc">
+                45мм блок динаміків Harman / Kardon  H1 має на 50% покращений об'єм звучання ( у порівнянні з попередньо моделлю). 
+                <br> H1 також має 2 бас-підсилюючі пластини, забезбечуючи якість кожного звуку - високі частоти, середні частоти та бас, - усе передбачено.
+            </p>
+        </div>
+        <div class="features">
+            <dl>
+                <dt><i class="c1"></i></dt>
+                <dd>динамік <br/> 45 мм</dd>
+            </dl>
+            <dl>
+                <dt><i class="c2"></i></dt>
+                <dd>Трьохдіапазонний <br> баланс </dd>
+            </dl>
+            <dl>
+                <dt><i class="c3"></i></dt>
+                <dd> Професійне <br/> тонування </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="video">
+        <video preload="" loop="" id="sound">
+            <source src="images/1.mp4" type="video/mp4">
+            <source src="images/1.webm" type="video/webm">
+        </video>
+    </div>
+</div>
+<div class="section section13 section_d">
+    <div class="J_movePic" dir-back="1"></div>
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Швидкопрацюючий процесор<br> Тримайтеся, бо швидкість здуне вас!</h2>
+            <p class="desc">
+                H1 може похвалитися новим чіпом Mstar 6A928 TV  з Cortex A17архітектурою,
+                <br> Quadcore 1.75GHz CPU, 3 Гб оперативної пам'яті,
+                <br> підтримує високоефективне кодування відео HEVC/H.265, формат ультра HD 4K відео.
+            </p>
+        </div>
+        <div class="features">
+            <dl>
+                <dt class="webfont">Mali-T760<span class="interval"></span>MP4</dt>
+                <dd>Графічний процесор</dd>
+            </dl>
+            <dl>
+                <dt class="webfont">3GB</dt>
+                <dd>ОЗП</dd>
+            </dl>
+            <dl>
+                <dt class="webfont">40%</dt>
+                <dd>Підвищена продуктивність</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="section section14 section_d">
+    <div class="J_movePic" data-move="200"></div>
+    <div class="con sa">
+        <div class="content">
+            <h2 class="title webfont">Дивує своїми функціями</h2>
+            <p class="desc">
+                Завдяки алюмінієвій структурі, пульт є міцним,
+                <br> і у той самий час дозвляє з легкістю виконувати інтуїтивно прості операції
+            </p>
+        </div>
+        <div class="features">
+            <dl>
+                <dt><i class="c1"></i></dt>
+                <dd>&nbsp;&nbsp;&nbsp;&nbsp;Bluetooth</dd>
+            </dl>
+            <dl>
+                <dt><i class="c3"></i></dt>
+                <dd>Зум</dd>
+            </dl>
+            <dl>
+                <dt><i class="c4"></i></dt>
+                <dd>Датчик сили</dd>
+            </dl>
+            <dl>
+                <dt><i class="c5"></i></dt>
+                <dd>&nbsp;&nbsp;&nbsp;&nbsp;Курсор</dd>
+            </dl>
+            <dl>
+                <dt class="webfont"><i class="c6"></i></dt>
+                <dd>Літієва батарея</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!--<div class="displaypics">-->
+    <!--<div class="lastpicv">-->
+        <!--<div class="container conW">-->
+            <!--<strong class="slogn">BRING H1 HOME TODAY</strong>-->
+            <!--<a class="mybtn" href="https://www.indiegogo.com/projects/h1-immersive-home-theater-that-fits-in-your-hands--2/?btm" target="_blank">PRE-ORDER NOW</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+</div>
+<div class="scrollTop"></div>
+</div>
+
+<!--desktop footer-->
+<div  class="ng-scope desktop-footer">
+    <div class="nav-footer ng-scope">
+        <div class="container">
+            <div class="nav-service clearfix">
+                <div class="nav-links clearfix">
+                    <ul>
+                        <li>КОМПАНІЯ</li>
+                        <li><a href="http://mi.ua/company/about/">Про компанію Xiaomi Tech</a></li>
+                        <li><a href="http://mi.ua/company/investors/">Партнерам</a></li>
+                        <li><a href="http://mi.ua/company/contacts/">Контакти</a></li>
+                        <li><a href="http://miui.ua/">MIUI</a></li>
+                        <li><a href="http://mi.ua/company/unlock-your-mi-device/">Unlock Your Mi Device</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ВИГІДНО</li>
+                        <li><a href="http://mi.ua/profitably/delivery/">Доставка та оплата</a></li>
+                        <li><a href="http://mi.ua/profitably/credit/">Придбати в розстрочку</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-protect/">Mi Protect</a></li>
+                        <li><a href="http://mi.ua/profitably/mi-trade-in/">Mi Trade-in</a></li>
+                        <li><a href="http://mi.ua/profitably/podarunkovi-sertifikati/">Подарункові сертифікати</a></li>
+                        <li><a href="http://mi.ua/profitably/promo/">Актуальні акції</a></li>
+                    </ul>
+                    <ul>
+                        <li>З НАМИ ЗРУЧНО</li>
+                        <li><a href="http://mi.ua/easy/change-and-returns/">Обмін та повернення без проблем</a></li>
+                        <li><a href="http://mi.ua/easy/warranty/">Гарантія</a></li>
+                        <li><a href="http://mi.ua/easy/service/">Сервіс</a></li>
+                        <li><a href="http://mi.ua/easy/check-serial-number/">Перевірка Серійного Номеру</a></li>
+                        <li><a href="http://mi.ua/easy/android-mi-store-ukraine-/">Додаток Android “Mi Store Ukraine” </a></li>
+                    </ul>
+                    <ul>
+                        <li>НАШІ ПРОЕКТИ</li>
+                        <li><a href="http://mi.ua/nashi-proekti/blagodiyni-proekti/">Благодійні проекти</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/pridbati-zi-skladu-v-kitai/">Придбати зі складу в Китаї</a></li>
+                        <li><a href="http://mi.ua/nashi-proekti/partneri/">Наші партнери</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-copyright">
+                <span><img src="https://s3.amazonaws.com/img01.xgimi.net/en/h1/images/market/logo.png"></span>
+                <span id="copyright">veoles</span>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/facebook-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/MiUkraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/twitter-icon1.png">
+                        </div>
+                    </a>
+                    <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/youtube-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/google-icon1.png">
+                        </div>
+                    </a>
+                    <a href="https://vk.com/mi_ukraine" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vkontakte_i1.png">
+                        </div>
+                    </a>
+                    <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                        <div class="social-icon">
+                            <img src="img/icon/vimeo-icon1.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end desktop footer-->
+
+<!--mobile footer-->
+<div class="ng-scope mobile-footer">
+    <div class="footer ng-scope">
+        <div class="p2">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Xiaomi.Ukraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/facebook-icon1.png">
+                    </span>
+                </a>
+                <a href="https://twitter.com/MiUkraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/twitter-icon1.png">
+                    </span>
+                </a>
+                <a href="http://www.youtube.com/channel/UC9xcqAWdcRnRXm2Y-9yqq2g?sub_confirmation=1" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/youtube-icon1.png">
+                    </span>
+                </a>
+                <a href="https://plus.google.com/110678164643880719859/about" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/google-icon1.png">
+                    </span>
+                </a>
+                <a href="https://vk.com/mi_ukraine" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/vkontakte_i1.png">
+                    </span>
+                </a>
+                <a href="https://vimeo.com/xiaomiglobal" target="_blank">
+                    <span class="social-icon">
+                        <img src="img/icon/vimeo-icon1.png">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <p class="p3">
+            <a href="mailto:info@xiaomi.ua">
+                <img src="./img/s_08.jpg" style="margin-bottom: 3px;"><br>info@xiaomi.ua
+            </a>
+            <a href="tel:0 (800) 60-44-71">
+                <img src="./img/s_10.jpg"><br>0 (800) 60-44-71
+            </a>
+        </p>
+    </div>
+</div>
+<!-- end mobile footer-->
+
+<script src="/js/pageClick.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(document).ready(function() {
+        var fullPage = $(document).scrollTop();
+        var secondNav = $('.secondNav').outerHeight();
+
+        //hui dao dingbu
+        $(".scrollTop").bind('click', function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+        //er ji dang hang
+        if ($(window).width() > 500) {
+            sound();
+        }
+
+        var dvTop = parseInt($(".secondNav").offset().top) + fullPage;
+        var p = 0,
+                t = 0;
+        $(window).scroll(function() {
+            if (fullPage > 740) {
+                $(".scrollTop").addClass("scrollTopShow").removeClass("scrollTopHide");
+            } else {
+                $(".scrollTop").addClass("scrollTopHide").removeClass("scrollTopShow");
+            }
+            var scrollTop = $(document).scrollTop();
+
+            p = $(this).scrollTop();
+
+
+            if (t <= p) { //下滚
+
+            } else { //上滚
+                $(".secondNav").css({
+                    "position": "fixed",
+                    "top": "0px",
+                    "left":"0px"
+                });
+                if (scrollTop < 450) {
+                    $(".secondNav").css({
+                        "position": "static"
+                    });
+                }
+            }
+            setTimeout(function() {
+                t = p;
+            }, 0);
+
+
+            fullPage = $(document).scrollTop();
+
+            if ($(window).width() > 500) {
+                sound();
+            }
+        });
+    });
+
+    function sound() {
+        if ($(window).scrollTop() > $("#sound").offset().top - 180 && $(window).scrollTop() < $("#sound").offset().top + 840) {
+            $('#sound').trigger('play');
+        } else {
+            $('#sound').trigger('pause');
+        }
+    }
+</script>
+<script>
+    //1080p、720p对比
+    $(function() {
+        var dragging = false;
+        var iX, iY;
+        $("#drag").mousedown(function(e) {
+            dragging = true;
+            iX = e.clientX - this.offsetLeft;
+            iY = e.clientY - this.offsetTop;
+            this.setCapture && this.setCapture();
+            return false;
+        });
+        document.onmousemove = function(e) {
+            if (dragging) {
+                var e = e || window.event;
+                var oX = e.clientX - iX;
+                var oY = e.clientY - iY;
+                $("#drag").css({
+                    "left": oX + "px"
+                });
+                $(".p720").css({
+                    "width": oX + 74 + "px",
+                    "-webkit-transition": "all 0s",
+                    "transition": "all 0s"
+                });
+                return false;
+            }
+        };
+        $(document).mouseup(function(e) {
+            dragging = false;
+            //$("#drag")[0].releaseCapture();
+            e.cancelBubble = true;
+        })
+    })
+
+    $(".section10").mousemove(function(event) {
+        //$(".machine").html($(".machine").offset().top+"<br>"+event.pageY);
+        if ($(".layer").offset().top - event.pageY < 450) {
+            translateX = ((1920 - $(window).width()) / 2 + event.pageX);
+            translateX = translateX < 1560 ? (translateX > 360 ? translateX : 360) : 1560;
+            $(".layer").css({
+                "transform": "translateX(" + translateX + "px)",
+                "-webkit-transform": "translateX(" + translateX + "px)"
+            });
+
+            //transform: scale(.1);
+
+            angle = ((960 - translateX) / 20).toFixed(1);
+            angle = angle < 30 ? (angle > -30 ? angle : -30) : 30;
+
+            $(".layer .beam").css({
+                "transform": "rotate(" + angle * 1.5 + "deg)",
+                "-webkit-transform": "rotate(" + angle * 1.5 + "deg)"
+            })
+
+            $(".angle .bj").css({
+                "transform": "rotate(" + angle + "deg)",
+                "-webkit-transform": "rotate(" + angle + "deg)"
+            })
+            angle = Math.abs(angle);
+            $(".frame").css({
+                "transform": "scale(" + (1 - (angle / 900)) + ")",
+                "-webkit-transform": "scale(" + (1 - (angle / 900)) + ")"
+            });
+            $(".angle .num").html(angle + "°");
+        }
+
+    });
+	
+</script>
+</body></html>
